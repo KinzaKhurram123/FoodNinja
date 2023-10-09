@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
 import {COLORS, FONTS, SIZES} from '../../constant';
 import {DarkTheme} from '../../constant/themes';
+import IconComponent from '../Icon';
 import {Icons} from '../index';
 import {Text} from '../index';
 
-const IconInputField = ({
+const InputField = ({
   style,
   placeholder,
   secureText,
@@ -35,7 +36,10 @@ const IconInputField = ({
     <>
       <View style={[styles.main_view, style]}>
         {icon && (
-          <Icons name={icon ? icon : null} style={[styles.icon, iconStyle]} />
+          <IconComponent
+            name={icon ? icon : null}
+            style={[styles.icon, iconStyle]}
+          />
         )}
         <TextInput
           multiline={multiline}
@@ -77,9 +81,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: SIZES.padding2,
-    borderRadius: 10,
-    backgroundColor: DarkTheme.white,
-    marginTop: SIZES.padding2,
+    borderRadius: SIZES.padding2,
+    backgroundColor: DarkTheme.text_input,
+    marginTop: SIZES.padding,
     shadowColor: DarkTheme.black,
     shadowOffset: {
       width: 0,
@@ -95,8 +99,9 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     ...FONTS.Regular12,
-    color: DarkTheme.black,
-    height: 45,
+    color: DarkTheme.text_color,
+    marginLeft: 6,
+    height: 55,
     textAlignVertical: 'center',
   },
   errorText: {
@@ -109,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default IconInputField;
+export default InputField;

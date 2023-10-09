@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '80%',
-    borderRadius: 10,
+    borderRadius: SIZES.padding2,
     marginTop: SIZES.padding,
   },
   row: {

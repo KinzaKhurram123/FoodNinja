@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     ...FONTS.Regular14,
+    color: DarkTheme.white,
   },
   header_view: {
     justifyContent: 'center',
@@ -28,9 +29,9 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
     paddingHorizontal: SIZES.padding * 1.5,
   },
-  login_text: {
-    ...FONTS.Regular24,
-    color: DarkTheme.dark_blue,
+  signup_text: {
+    ...FONTS.Regular19,
+    color: DarkTheme.white,
   },
   btn_row: {
     flexDirection: 'row',
@@ -50,6 +51,12 @@ export const styles = StyleSheet.create({
     ...FONTS.Regular14,
     color: DarkTheme.black,
   },
+  check_box: {
+    marginTop: SIZES.padding * 2,
+    marginLeft: -SIZES.padding2 * 0.3,
+    paddingRight: SIZES.padding2 * 1.5,
+    alignItems: 'flex-start',
+  },
   btn_innerView: {
     flexDirection: 'row',
     gap: SIZES.padding2,
@@ -63,5 +70,26 @@ export const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     marginTop: SIZES.padding,
+  },
+  privacy_view: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    marginTop: SIZES.padding,
+    marginLeft: SIZES.padding2,
+  },
+  privacy_text: { ...FONTS.Regular12 },
+  privacy_link_text: {
+    ...FONTS.Regular12,
+    color: DarkTheme.secondary,
+    textDecorationLine: "underline",
+  },
+  errors: {
+    ...FONTS.Medium13,
+    color: "red",
+    marginTop: 5,
+    textAlign: "left",
+    // backgroundColor: "red",
   },
 });
