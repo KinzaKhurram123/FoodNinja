@@ -13,7 +13,7 @@ import back_icon from '../../assets/icons/back_icon';
 import IconInputField from '../../components/InputField.js';
 import {paypal_icon, visa_icon} from '../../assets/icons';
 import payaneer_icon from '../../assets/icons/payaneer_icon';
-const PaymentMethod = () => {
+const PaymentMethod = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -42,12 +42,18 @@ const PaymentMethod = () => {
             <Icon name={payaneer_icon} />
           </TouchableOpacity>
         </View>
-        <View style={{height: SIZES.padding * 12}} />
-        <Button
-          buttonText={'Next'}
-          style={styles.btn}
-          onPress={() => navigation.navigate('PaymentMethod')}
-        />
+        <View
+          style={{
+            justifyContent: 'flex-end',
+            flex: 1,
+            marginBottom: SIZES.padding,
+          }}>
+          <Button
+            buttonText={'Next'}
+            style={styles.btn}
+            onPress={() => navigation.navigate('UploadImage')}
+          />
+        </View>
       </ImageBackground>
     </SafeAreaView>
   );

@@ -37,7 +37,13 @@ const CreatAccount = ({navigation}) => {
             <IconInputField placeholder={'Last Name'} />
             <IconInputField placeholder={'Mobile Number'} />
           </View>
-          <View style={{height: SIZES.padding * 12}} />
+        </View>
+        <View
+          style={{
+            justifyContent: 'flex-end',
+            flex: 1,
+            marginBottom: SIZES.padding,
+          }}>
           <Button
             buttonText={'Next'}
             style={styles.btn}

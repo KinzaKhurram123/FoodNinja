@@ -1,5 +1,4 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '../../constant';
 import {DarkTheme, FONTS, SIZES} from '../../constant/themes';
 
 export const styles = StyleSheet.create({
@@ -17,10 +16,6 @@ export const styles = StyleSheet.create({
     ...FONTS.Regular14,
     marginVertical: SIZES.padding,
   },
-  text_btn: {
-    ...FONTS.Bold12,
-    marginVertical: SIZES.padding,
-  },
   header_view: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -32,18 +27,25 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
     paddingHorizontal: SIZES.padding * 1.5,
   },
+  btn: {
+    width: 150,
+    alignSelf: 'center',
+    marginTop: SIZES.padding,
+  },
   social_btn: {
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingVertical: SIZES.padding,
     alignItems: 'center',
     backgroundColor: DarkTheme.dark_blue,
     width: '100%',
     borderRadius: SIZES.padding2,
+    flexDirection: 'row',
     marginTop: SIZES.padding,
+    paddingHorizontal: SIZES.padding, 
+    gap: SIZES.padding2
   },
-  btn: {
-    width: 150,
-    alignSelf: 'center',
-    marginTop: SIZES.padding,
+  text_btn: {
+    ...FONTS.Bold12,
+    marginVertical: SIZES.padding,
   },
 });

@@ -12,6 +12,7 @@ import Signup from '../screens/Signup';
 import CreatAccount from '../screens/CreatAccount';
 import PaymentMethod from '../screens/PaymentMethod';
 import UploadImage from '../screens/UploadImage';
+import Location from '../screens/Location';
 
 const Stack = createStackNavigator();
 
@@ -29,7 +30,7 @@ const MainNavigation = () => {
       <Stack.Screen name="CreatAccount" component={CreatAccount} />
       <Stack.Screen name="PaymentMethod" component={PaymentMethod} />
       <Stack.Screen name="UploadImage" component={UploadImage} />
-
+      <Stack.Screen name="Location" component={Location} />
     </Stack.Navigator>
   );
 };
