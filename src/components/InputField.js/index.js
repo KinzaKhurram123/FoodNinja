@@ -26,6 +26,8 @@ const InputField = ({
   returnKeyType,
   onChangeText,
   autoFocus,
+  rightIcon = false,
+  righticon
 }) => {
   const [hidePassword, setHidePassword] = useState(true);
 
@@ -67,6 +69,12 @@ const InputField = ({
           blurOnSubmit={false}
           onSubmitEditing={onSubmitEditing}
         />
+        {rightIcon && (
+          <IconComponent
+            name={righticon ? righticon : null}
+            style={[styles.icon, iconStyle]}
+          />
+        )}
       </View>
     </>
   );
@@ -84,14 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.padding2,
     backgroundColor: DarkTheme.text_input,
     marginTop: SIZES.padding,
-    shadowColor: DarkTheme.black,
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-    elevation: 2,
+    gap: 12,
   },
   icon: {
     width: '7%',

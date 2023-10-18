@@ -1,10 +1,7 @@
-import {StyleSheet, View, Text} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Splash from '../screens/Splash';
-import {DarkTheme, DefaultTheme, isLightTheme} from '../constant/themes';
-import MainNavigation from './MainNavigation';
+import MainNavigator from './MainNavigator';
 
 const Stack = createStackNavigator();
 
@@ -12,9 +9,9 @@ const Routes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Splash"
+        initialRouteName="MainNavigator"
         screenOptions={{headerShown: false}}>
-        <Stack.Screen name="MainNavigation" component={MainNavigation} />
+        <Stack.Screen name="MainNavigation" component={MainNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );

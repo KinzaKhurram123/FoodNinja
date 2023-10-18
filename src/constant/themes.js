@@ -15,8 +15,9 @@ export const DarkTheme = {
   text_color: '#fff',
   white: '#fff',
   dark_blue: '#09051C',
-  text_input: '#F4F4F4',
-  black:'#000'
+  text_input: '#474747',
+  black: '#0D0D0D',
+  input_text: '#dbdbdb',
 };
 
 export const isLightTheme = Appearance.getColorScheme() === 'light';
