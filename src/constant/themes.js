@@ -18,6 +18,8 @@ export const DarkTheme = {
   text_input: '#474747',
   black: '#0D0D0D',
   input_text: '#dbdbdb',
+  orange: '#FF8E4C',
+  yellow: '#FEAD1D',
 };
 
 export const isLightTheme = Appearance.getColorScheme() === 'light';

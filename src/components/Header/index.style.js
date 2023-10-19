@@ -4,7 +4,6 @@ import {DarkTheme, FONTS, SIZES} from '../../constant/themes';
 export const styles = StyleSheet.create({
   main_view: {
     paddingTop: Platform.OS === 'ios' ? SIZES.padding : SIZES.padding,
-    paddingBottom: SIZES.padding * 1.3,
     paddingHorizontal: SIZES.padding,
   },
   sub_view: {
@@ -13,13 +12,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   title: {
-    ...FONTS.Bold25,
+    ...FONTS.SemiBold28,
     color: DarkTheme.white,
     textAlign: 'left',
   },
-  image: {
-    width: 35,
-    height: 35,
-    borderRadius: SIZES.padding,
+  filter_btn: {
+    backgroundColor: DarkTheme.text_input,
+    padding: SIZES.padding2,
+    borderRadius: SIZES.padding2,
+    opacity: 0.5,
+    alignItems: 'center',
   },
+  search: {width: '80%', marginTop: 0},
 });

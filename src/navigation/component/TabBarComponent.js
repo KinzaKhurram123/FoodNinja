@@ -34,8 +34,8 @@ const tabScreens = [
   },
   {
     id: '4',
-    name: 'Chat',
-    // component: StatsStack,
+    name: 'Chats',
+    component: DashboardStack,
     activeIcon: msgIcon,
     title: 'Chat',
   },
