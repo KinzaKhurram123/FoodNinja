@@ -3,9 +3,9 @@ import React from 'react';
 import {styles} from './index.style';
 import {FONTS, images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
+import back_icon from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
-import locationIcon from '../../../assets/icons/location-icon';
+import location_icon from '../../../assets/icons';
 
 const Location = ({navigation}) => {
   return (
@@ -26,7 +26,7 @@ const Location = ({navigation}) => {
           </View>
           <View style={styles.location_btn}>
             <View style={{flexDirection: 'row', gap: 7}}>
-              <Icon name={locationIcon} />
+              <Icon name={location_icon} />
               <Text text={'Your Location'} style={styles.text} />
             </View>
             <TouchableOpacity style={styles.btn_location}>

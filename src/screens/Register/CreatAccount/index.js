@@ -9,7 +9,7 @@ import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
+import back_icon from '../../../assets/icons';
 import IconInputField from '../../../components/InputField.js/index.js';
 import ImageContainer from '../../../components/ImageContainer';
 

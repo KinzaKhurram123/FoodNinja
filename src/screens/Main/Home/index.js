@@ -6,15 +6,13 @@ import {
   TouchableOpacity,
   FlatList,
   ScrollView,
-  ImageBackground,
 } from 'react-native';
 import React from 'react';
 import ImageContainer from '../../../components/ImageContainer';
 import {styles} from './index.style';
 import Headers from '../../../components/Header';
-import back_icon from '../../../assets/icons/back_icon';
-import {images} from '../../../constant';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 import {Text} from '../../../components';
 import {nearest_restaurant, popular_menu} from '../../../config';
 
@@ -25,6 +23,7 @@ const Home = ({navigation}) => {
         <ScrollView>
           <Headers
             filter={true}
+            onPressIcon={() => navigation.navigate('Notification')}
             onpressFilters={() => navigation.navigate('Filter')}
             heading_Text={'Find Your Favorite Food'}
             searchbar={true}
@@ -33,7 +32,7 @@ const Home = ({navigation}) => {
             {/* <ImageBackground
               source={images.banner_image}
               style={{
-                backgroundColor: DarkTheme.primary,
+                backgroundColor: COLORS.primary,
                 borderRadius: SIZES.padding2,
               }}
               imageStyle={{height: '100%', width: '100%'}
@@ -46,7 +45,7 @@ const Home = ({navigation}) => {
               <Text text={'Nearest Restaurant'} style={styles.text} />
               <TouchableOpacity
                 onPress={() => navigation.navigate('Restaurant')}>
-                <Text text={'View More'} style={styles.view_more_text} />
+                <Text text={'View More'} style={styles.more_text} />
               </TouchableOpacity>
             </View>
             <FlatList

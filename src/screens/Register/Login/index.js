@@ -9,7 +9,6 @@ import React from 'react';
 import {COLORS, images, SIZES} from '../../../constant';
 import {styles} from './index.style';
 import {Button, InputField, Text} from '../../../components';
-import {DarkTheme} from '../../../constant/themes';
 import IconComponent from '../../../components/Icon';
 import {facebook_icon, google_icon} from '../../../assets/icons';
 
@@ -17,7 +16,7 @@ const Login = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={images.background_Pattren}
+        source={images.background}
         style={{height: '60%'}}>
         <View style={styles.header_view}>
           <Image source={images.logo} />

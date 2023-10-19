@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '../../../constant';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
@@ -8,7 +7,7 @@ export const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold24,
     marginTop: SIZES.padding,
     fontWeight: '700',
@@ -32,7 +31,7 @@ export const styles = StyleSheet.create({
     height: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: DarkTheme.dark_blue,
+    backgroundColor: COLORS.dark_blue,
     width: '100%',
     borderRadius: SIZES.padding2,
     marginTop: SIZES.padding,
@@ -41,5 +40,10 @@ export const styles = StyleSheet.create({
     width: 150,
     alignSelf: 'center',
     marginTop: SIZES.padding,
+  },
+  btn_view: {
+    justifyContent: 'flex-end',
+    flex: 1,
+    marginBottom: SIZES.padding,
   },
 });

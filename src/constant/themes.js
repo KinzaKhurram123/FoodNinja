@@ -8,7 +8,7 @@ export const DefaultTheme = {
   secondary: '#09051C',
   text_color: '#000',
 };
-export const DarkTheme = {
+export const COLORS = {
   background: '#0D0D0D',
   primary: '#53E88B',
   secondary: '#09051C',

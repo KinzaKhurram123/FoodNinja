@@ -7,6 +7,7 @@ import Restaurant from '../screens/Main/Restaurant';
 import ExploreMenu from '../screens/Main/ExpoloreMenu';
 import Filter from '../screens/Main/Filter';
 import Chats from '../screens/Main/Chat';
+import Notification from '../screens/Main/Notification';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const DashboardStack = () => {
       <Stack.Screen name="ExploreMenu" component={ExploreMenu} />
       <Stack.Screen name="Filter" component={Filter} />
       <Stack.Screen name="Chats" component={Chats} />
+      <Stack.Screen name="Notification" component={Notification} />
     </Stack.Navigator>
   );
 };

@@ -1,42 +1,48 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.background,
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold25,
     textAlign: 'center',
     fontWeight: '700',
   },
-  text: {
-    ...FONTS.Bold16,
-    textAlign: 'left',
-  },
-  light_text: {
-    textAlign: 'center',
-    ...FONTS.light14,
-    color: DarkTheme.input_text,
-  },
+
   main_view: {
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
+    flex: 1,
   },
-  restaurant_view: {
-    justifyContent: 'center',
+  chat_view: {
+    flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: DarkTheme.text_input,
-    paddingVertical: SIZES.padding,
-    width: '45%',
-    marginRight: SIZES.padding2,
+    justifyContent: 'flex-start',
+    backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding,
-    borderRadius: SIZES.padding2,
+    padding: SIZES.padding2,
+    borderRadius: SIZES.padding2 * 1.5,
   },
-  restaurant_heading: {
+  chat_heading: {
     ...FONTS.Bold16,
-    textAlign: 'center',
+    textAlign: 'left',
+  },
+  chat_light_text: {
+    textAlign: 'left',
+    ...FONTS.light13,
+    color: COLORS.input_text,
+  },
+  chat_price: {
+    color: COLORS.yellow,
+    ...FONTS.Bold20,
+    paddingRight: SIZES.padding2,
+  },
+  time: {
+    marginBottom: SIZES.padding * 2,
+    marginLeft: SIZES.padding,
+    color: COLORS.input_text,
   },
 });

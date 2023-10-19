@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
 import {COLORS, FONTS, SIZES} from '../../constant';
-import {DarkTheme} from '../../constant/themes';
 import IconComponent from '../Icon';
 import {Icons} from '../index';
 import {Text} from '../index';
@@ -46,14 +45,14 @@ const InputField = ({
         <TextInput
           multiline={multiline}
           ref={forwardRef}
-          cursorColor={DarkTheme.text_input}
+          cursorColor={COLORS.text_input}
           autoCapitalize={autoCapitalize}
           onChangeText={onChangeText}
           keyboardType={keyboardType}
           placeholder={placeholder}
           secureTextEntry={secureText && hidePassword}
           style={[styles.input, inputStyle]}
-          placeholderTextColor={DarkTheme.black}
+          placeholderTextColor={COLORS.black}
           defaultValue={defaultValue}
           value={value}
           autoFocus={autoFocus}
@@ -90,7 +89,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: SIZES.padding2,
     borderRadius: SIZES.padding2,
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding,
     gap: 12,
   },
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     ...FONTS.Regular12,
-    color: DarkTheme.text_color,
+    color: COLORS.text_color,
     marginLeft: 6,
     height: 55,
     textAlignVertical: 'center',

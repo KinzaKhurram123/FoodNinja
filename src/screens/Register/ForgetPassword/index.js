@@ -9,11 +9,9 @@ import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
 import IconInputField from '../../../components/InputField.js/index.js';
 import ImageContainer from '../../../components/ImageContainer';
-import massageIcon from '../../../assets/icons/massage-icon';
-import {mail_icon} from '../../../assets/icons';
+import {back_icon, mail_icon, massage_icon} from '../../../assets/icons';
 
 const ForgetPassword = ({navigation}) => {
   return (
@@ -24,10 +22,7 @@ const ForgetPassword = ({navigation}) => {
             <Icon name={back_icon} />
           </TouchableOpacity>
           <View>
-            <Text
-              text={'Forgot password?'}
-              style={styles.heading_Text}
-            />
+            <Text text={'Forgot password?'} style={styles.heading_Text} />
             <Text
               text={
                 'Select which contact details should we use to reset your password'
@@ -35,7 +30,7 @@ const ForgetPassword = ({navigation}) => {
               style={styles.text}
             />
             <IconInputField
-              icon={massageIcon}
+              icon={massage_icon}
               placeholder={'Via Sms'}
               style={{padding: SIZES.padding2, paddingLeft: SIZES.padding}}
             />

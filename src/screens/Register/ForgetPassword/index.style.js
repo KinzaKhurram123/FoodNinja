@@ -1,13 +1,13 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.black,
+    backgroundColor: COLORS.black,
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold24,
     marginTop: SIZES.padding,
     fontWeight: '700',
@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
   },
   btn_location: {
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     padding: SIZES.padding2,
     alignItems: 'center',
     borderRadius: SIZES.padding2,

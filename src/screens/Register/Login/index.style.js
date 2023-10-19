@@ -1,17 +1,13 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, RS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.black,
-  },
-  blogImage: {
-    borderRadius: 20,
-    width: '100%',
+    backgroundColor: COLORS.black,
   },
   heading_Text: {
-    color: DarkTheme.primary,
+    color: COLORS.primary,
     ...FONTS.SplashText,
   },
   text: {
@@ -30,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   login_text: {
     ...FONTS.Regular24,
-    color: DarkTheme.dark_blue,
+    color: COLORS.dark_blue,
   },
   btn_row: {
     flexDirection: 'row',
@@ -39,7 +35,7 @@ export const styles = StyleSheet.create({
     marginTop: SIZES.padding,
   },
   social_btn: {
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     height: 60,
     width: '45%',
     alignItems: 'center',
@@ -48,7 +44,7 @@ export const styles = StyleSheet.create({
   },
   btn_text: {
     ...FONTS.Regular14,
-    color: DarkTheme.input_text,
+    color: COLORS.input_text,
   },
   btn_innerView: {
     flexDirection: 'row',
@@ -56,7 +52,7 @@ export const styles = StyleSheet.create({
   },
   forget_text: {
     ...FONTS.Regular14,
-    color: DarkTheme.primary,
+    color: COLORS.primary,
     textDecorationLine: 'underline',
   },
   btn: {

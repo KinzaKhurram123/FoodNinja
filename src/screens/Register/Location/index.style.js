@@ -1,13 +1,19 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, RS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.black,
+    backgroundColor: COLORS.black,
+  },
+  main_view: {
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    marginVertical: SIZES.padding,
+    paddingHorizontal: SIZES.padding * 1.5,
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold24,
     marginTop: SIZES.padding,
     fontWeight: '700',
@@ -15,17 +21,6 @@ export const styles = StyleSheet.create({
   text: {
     ...FONTS.Regular14,
     marginVertical: SIZES.padding,
-  },
-  header_view: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: SIZES.padding * 4,
-  },
-  main_view: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    marginVertical: SIZES.padding,
-    paddingHorizontal: SIZES.padding * 1.5,
   },
   btn: {
     width: 150,
@@ -47,7 +42,7 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
   },
   btn_location: {
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: Theme.text_input,
     padding: SIZES.padding2,
     alignItems: 'center',
     borderRadius: SIZES.padding2,

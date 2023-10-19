@@ -2,11 +2,10 @@ import {TouchableOpacity, SafeAreaView, View} from 'react-native';
 import React from 'react';
 import {Button, Icon, InputField, Text} from '../../components';
 import {styles} from './index.style';
-import notificationIcon from '../../assets/icons/notification-icon';
 import {SIZES} from '../../constant';
-import searchbarIcon from '../../assets/icons/searchbar-icon';
-import filterIcon from '../../assets/icons/filter-icon';
 import {DarkTheme} from '../../constant/themes';
+import {filter_icon, notification_icon} from '../../assets/icons';
+import serachbar_icon from '../../assets/icons';
 
 const Headers = ({
   style,
@@ -16,7 +15,7 @@ const Headers = ({
   heading_Text,
   onpressFilters,
   filter = false,
-  searchbar_style
+  searchbar_style,
 }) => {
   return (
     <View style={[styles.main_view, style]}>
@@ -27,13 +26,13 @@ const Headers = ({
         <TouchableOpacity
           style={{paddingLeft: SIZES.padding * 2}}
           onPress={onPressIcon}>
-          <Icon name={notificationIcon} />
+          <Icon name={notification_icon} />
         </TouchableOpacity>
       </View>
       {searchbar && (
         <View style={styles.sub_view}>
           <InputField
-            icon={searchbarIcon}
+            icon={serachbar_icon}
             placeholder={'What do you want to order?'}
             style={[styles.search, searchbar_style]}
           />
@@ -41,7 +40,7 @@ const Headers = ({
             <TouchableOpacity
               onPress={onpressFilters}
               style={styles.filter_btn}>
-              <Icon name={filterIcon} />
+              <Icon name={filter_icon} />
             </TouchableOpacity>
           )}
         </View>

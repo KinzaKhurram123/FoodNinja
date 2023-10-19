@@ -10,8 +10,8 @@ const Congrats = ({navigation, route}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={images.background_Pattren}
-        style={{height: '40%', flex: 1, justifyContent: 'center'}}>
+        source={images.background}
+        style={styles.banner_image}>
         <View style={styles.header_view}>
           <Image source={images.congrats_background} />
           <Text text={'Congrats'} style={styles.heading_Text} />

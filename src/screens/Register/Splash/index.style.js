@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS} from '../../../constant/themes';
+import {COLORS, FONTS} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     width: '100%',
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.SplashText,
   },
   text: {

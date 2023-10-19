@@ -1,5 +1,5 @@
 import {Dimensions, Platform, StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../constant/themes';
 
 export const styles = StyleSheet.create({
   main_view: {
@@ -13,11 +13,11 @@ export const styles = StyleSheet.create({
   },
   title: {
     ...FONTS.SemiBold28,
-    color: DarkTheme.white,
+    color: COLORS.white,
     textAlign: 'left',
   },
   filter_btn: {
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
     opacity: 0.5,

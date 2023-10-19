@@ -1,13 +1,12 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, RS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.background,
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold25,
     textAlign: 'center',
     fontWeight: '700',
@@ -19,16 +18,17 @@ export const styles = StyleSheet.create({
   light_text: {
     textAlign: 'center',
     ...FONTS.light14,
-    color: DarkTheme.input_text,
+    color: COLORS.input_text,
   },
   main_view: {
+    flex: 1,
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
   },
   restaurant_view: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     paddingVertical: SIZES.padding,
     width: '45%',
     marginRight: SIZES.padding2,

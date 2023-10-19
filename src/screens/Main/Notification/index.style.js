@@ -23,9 +23,24 @@ export const styles = StyleSheet.create({
   main_view: {
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
-    backgroundColor: COLORS.black,
-    flex: 1,
-    borderTopStartRadius: SIZES.padding,
-    borderTopEndRadius: SIZES.padding,
+  },
+  notification_view: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: COLORS.text_input,
+    marginTop: SIZES.padding,
+    padding: SIZES.padding2,
+    height: 90,
+    borderRadius: SIZES.padding2 * 1.5,
+  },
+  notification_heading: {
+    ...FONTS.Bold15,
+    textAlign: 'left',
+  },
+  notification_light_text: {
+    textAlign: 'left',
+    ...FONTS.light13,
+    color: COLORS.input_text,
   },
 });

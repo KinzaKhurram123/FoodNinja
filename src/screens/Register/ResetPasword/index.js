@@ -9,12 +9,10 @@ import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
+import back_icon from '../../../assets/icons';
 import IconInputField from '../../../components/InputField.js/index.js';
 import ImageContainer from '../../../components/ImageContainer';
-import massageIcon from '../../../assets/icons/massage-icon';
-import {mail_icon} from '../../../assets/icons';
-import eyeIcon from '../../../assets/icons/eye-icon';
+import eyeIcon from '../../../assets/icons/'
 
 const RessetPaswrod = ({navigation}) => {
   return (

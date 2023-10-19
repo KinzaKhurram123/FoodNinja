@@ -9,9 +9,9 @@ import React, {useState} from 'react';
 import {COLORS, images, SIZES} from '../../../constant';
 import {styles} from './index.style';
 import {Button, CustomCheckBox, InputField, Text} from '../../../components';
-import user_icon from '../../../assets/icons/user_icon';
-import email_icon from '../../../assets/icons/email_icon';
-import pasword_icon from '../../../assets/icons/pasword_icon';
+import {user_icon} from '../../../assets/icons';
+import email_icon from '../../../assets/icons';
+import pasword_icon from '../../../assets/icons';
 
 const Signup = ({navigation}) => {
   const [isCheck, setIsCheck] = useState(false);
@@ -19,7 +19,7 @@ const Signup = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={images.background_Pattren}
+        source={images.background}
         style={{height: '55%'}}>
         <View style={styles.header_view}>
           <Image source={images.logo} />
@@ -33,18 +33,6 @@ const Signup = ({navigation}) => {
           <InputField icon={user_icon} placeholder={'Anamwp..'} />
           <InputField icon={email_icon} placeholder={'Email'} />
           <InputField icon={pasword_icon} placeholder={'Password'} />
-          {/* <Checkbox
-            isChecked={isCheck}
-            style={styles.check_box}
-            rightTextView={
-              <View style={styles.privacy_view}>
-                <Text style={styles.privacy_text} text={'Keep Me Signed In'} />
-              </View>
-            }
-            onClick={() => setIsCheck(!isCheck)}
-            checkedCheckBoxColor={DarkTheme.secondary}
-            uncheckedCheckBoxColor={DarkTheme.primary}
-          /> */}
           <View style={{height: SIZES.padding}} />
           <Button
             buttonText={'Creat Account'}

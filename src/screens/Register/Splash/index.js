@@ -18,7 +18,7 @@ const Splash = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={images.background_Pattren}
+        source={images.background}
         style={{flex: 1, height: '40%'}}>
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
           <Image source={images.logo} />

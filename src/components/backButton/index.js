@@ -1,13 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import React from 'react';
+import {Icon, Text} from '..';
+import {FONTS, SIZES} from '../../constant';
+import {back_icon} from '../../assets/icons';
 
-const BackButton = () => {
+const BackButton = ({text,onpress}) => {
   return (
-    <View>
-      <TouchableOpacity>
-        <Icon name={back_icon} />
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity
+    onPress={onpress}
+      style={{alignItems: 'flex-start', marginTop: SIZES.padding * 2}}>
+      <Icon name={back_icon} />
+      <Text text={text} style={{...FONTS.Bold24, marginTop: SIZES.padding}} />
+    </TouchableOpacity>
   );
 };
 

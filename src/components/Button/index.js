@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {FONTS, SIZES} from '../../constant';
-import {DarkTheme} from '../../constant/themes';
+import {COLORS} from '../../constant/themes';
 import {Icons, Loader} from '../index';
 
 const CustomButton = ({
@@ -19,7 +19,7 @@ const CustomButton = ({
       style={[
         styles.container,
         style,
-        {backgroundColor: disabled ? DarkTheme.secondary : DarkTheme.primary},
+        {backgroundColor: disabled ? COLORS.secondary : COLORS.primary},
       ]}
       disabled={disabled}>
       {loading ? (
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   defaultText: {
     ...FONTS.Medium15,
-    color: DarkTheme.white,
+    color: COLORS.white,
   },
   icon: {
     width: '12%',

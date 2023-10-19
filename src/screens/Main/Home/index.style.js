@@ -1,20 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.background,
-  },
-  blogImage: {
-    borderRadius: 20,
-    width: '100%',
-  },
-  heading_Text: {
-    color: DarkTheme.white,
-    ...FONTS.Bold25,
-    textAlign: 'center',
-    fontWeight: '700',
   },
   text: {
     ...FONTS.Bold14,
@@ -23,27 +12,17 @@ export const styles = StyleSheet.create({
   light_text: {
     textAlign: 'center',
     ...FONTS.light14,
-    color: DarkTheme.input_text,
+    color: COLORS.input_text,
   },
-  view_more_text: {
+  more_text: {
     ...FONTS.Bold14,
     textAlign: 'center',
-    color: DarkTheme.orange,
+    color: COLORS.orange,
   },
   main_view: {
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
-  },
-  sub_view: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginVertical: SIZES.padding * 2.5,
-    paddingHorizontal: SIZES.padding * 2.5,
-  },
-  btn: {
-    width: 200,
-    alignSelf: 'center',
-    marginTop: SIZES.padding,
+    flex: 1,
   },
   text_view: {
     flexDirection: 'row',
@@ -53,7 +32,7 @@ export const styles = StyleSheet.create({
   restaurant_view: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     paddingVertical: SIZES.padding,
     width: 150,
     marginRight: SIZES.padding2,
@@ -68,7 +47,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
@@ -80,11 +59,11 @@ export const styles = StyleSheet.create({
   menu_light_text: {
     textAlign: 'left',
     ...FONTS.light14,
-    color: DarkTheme.input_text,
+    color: COLORS.input_text,
   },
   menu_price: {
-    color: DarkTheme.yellow,
+    color: COLORS.yellow,
     ...FONTS.Bold20,
-    paddingRight:SIZES.padding2
+    paddingRight: SIZES.padding2,
   },
 });

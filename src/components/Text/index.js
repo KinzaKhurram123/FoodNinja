@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text} from 'react-native';
-import {COLORS, FONTS} from '../../constant';
-import {DarkTheme} from '../../constant/themes';
+import {COLORS, FONTS} from '../../constant/themes';
 
 const CustomText = ({style, text, numberOfLines}) => {
   return (
@@ -13,7 +12,7 @@ const CustomText = ({style, text, numberOfLines}) => {
 const styles = StyleSheet.create({
   text: {
     ...FONTS.Regular14,
-    color: DarkTheme.text_color,
+    color: COLORS.text_color,
   },
 });
 

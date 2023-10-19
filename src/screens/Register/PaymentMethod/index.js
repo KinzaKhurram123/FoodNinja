@@ -1,18 +1,11 @@
-import {
-  StyleSheet,
-  SafeAreaView,
-  ImageBackground,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
-import IconInputField from '../../../components/InputField.js/index.js';
+import back_icon from '../../../assets/icons';
 import {paypal_icon, visa_icon} from '../../../assets/icons';
-import payaneer_icon from '../../../assets/icons/payaneer_icon';
+import payaneer_icon from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
 const PaymentMethod = ({navigation}) => {
   return (
@@ -41,12 +34,7 @@ const PaymentMethod = ({navigation}) => {
             <Icon name={payaneer_icon} />
           </TouchableOpacity>
         </View>
-        <View
-          style={{
-            justifyContent: 'flex-end',
-            flex: 1,
-            marginBottom: SIZES.padding,
-          }}>
+        <View style={styles.btn_view}>
           <Button
             buttonText={'Next'}
             style={styles.btn}

@@ -1,14 +1,9 @@
 import {StyleSheet, FlatList, View, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
-import {DarkTheme, FONTS, SIZES} from '../../constant/themes';
+import {COLORS, RS, FONTS, SIZES} from '../../constant/themes';
 import DashboardStack from '../DashboardStack';
-import home_icon from '../../assets/icons/home_icon';
-import profileIcon from '../../assets/icons/profile-icon';
 import {Icon, Text} from '../../components';
-import cartIcon from '../../assets/icons/cart-icon';
-import massageIcon from '../../assets/icons/massage-icon';
-import msgIcon from '../../assets/icons/msg-icon';
-import {COLORS} from '../../constant';
+import {cart_icon, home_icon, msg_icon, profile_icon} from '../../assets/icons';
 
 const tabScreens = [
   {
@@ -22,21 +17,21 @@ const tabScreens = [
     id: '2',
     name: 'Profile',
     component: DashboardStack,
-    activeIcon: profileIcon,
+    activeIcon: profile_icon,
     title: 'Profile',
   },
   {
     id: '3',
     // name: "Cart",
     // component: QRStack,
-    activeIcon: cartIcon,
+    activeIcon: cart_icon,
     title: 'Cart',
   },
   {
     id: '4',
     name: 'Chats',
     component: DashboardStack,
-    activeIcon: msgIcon,
+    activeIcon: msg_icon,
     title: 'Chat',
   },
 ];
@@ -92,13 +87,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: SIZES.padding2,
     margin: SIZES.padding2,
-    backgroundColor: DarkTheme.primary,
+    backgroundColor: COLORS.primary,
     borderRadius: SIZES.padding2,
     opacity: 0.4,
   },
   tab_bar: {
     height: 75,
-    backgroundColor: DarkTheme.text_input,
+    backgroundColor: COLORS.text_input,
     justifyContent: 'flex-start',
   },
 });

@@ -7,17 +7,13 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons/back_icon';
+import {SIZES} from '../../../constant';
+import {Button, Icon, Text} from '../../../components';
+import back_icon from '../../../assets/icons';
 import IconInputField from '../../../components/InputField.js/index.js';
 import ImageContainer from '../../../components/ImageContainer';
-import massageIcon from '../../../assets/icons/massage-icon';
-import {mail_icon} from '../../../assets/icons';
-import {CodeField} from 'react-native-confirmation-code-field';
 import {useBlurOnFulfill} from 'react-native-confirmation-code-field/esm/useBlurOnFulfill';
 import {useClearByFocusCell} from 'react-native-confirmation-code-field/esm/useClearByFocusCell';
-import {DarkTheme} from '../../../constant/themes';
 
 const ConfirmationCode = ({navigation}) => {
   const CELL_COUNT = 4;

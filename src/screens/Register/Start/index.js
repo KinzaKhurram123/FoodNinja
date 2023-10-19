@@ -3,7 +3,6 @@ import React from 'react';
 import {styles} from './index.style';
 import {COLORS, images, SIZES} from '../../../constant';
 import {Button, Text} from '../../../components';
-import {DarkTheme} from '../../../constant/themes';
 
 const Start = ({navigation}) => {
   return (

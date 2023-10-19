@@ -1,9 +1,5 @@
-import {StyleSheet, View, Text} from 'react-native';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Splash from '../screens/Register/Splash';
-import {DarkTheme, DefaultTheme, isLightTheme} from '../constant/themes';
 import Onboarding from '../screens/Register/Onboarding';
 import Start from '../screens/Register/Start';
 import Login from '../screens/Register/Login';

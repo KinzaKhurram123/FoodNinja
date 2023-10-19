@@ -7,10 +7,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import {images} from '../../constant';
-import {DarkTheme} from '../../constant/themes';
+import {COLORS, DarkTheme} from '../../constant/themes';
 
 const ImageContainer = ({children}) => {
   return (
+    <View style={{flex: 1, backgroundColor: COLORS.black}}>
       <ImageBackground
         source={images.pattren_image}
         style={{
@@ -19,6 +20,7 @@ const ImageContainer = ({children}) => {
         }}>
         {children}
       </ImageBackground>
+    </View>
   );
 };
 
@@ -28,6 +30,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'black',
-    opacity: 0.1
+    opacity: 0.1,
   },
 });

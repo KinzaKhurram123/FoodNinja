@@ -1,17 +1,13 @@
 import {StyleSheet} from 'react-native';
-import {DarkTheme, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: DarkTheme.background,
-  },
-  blogImage: {
-    borderRadius: 20,
-    width: '100%',
+    backgroundColor: COLORS.background,
   },
   heading_Text: {
-    color: DarkTheme.white,
+    color: COLORS.white,
     ...FONTS.Bold25,
     textAlign: 'center',
     fontWeight: '700',
