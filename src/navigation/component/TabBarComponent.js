@@ -22,8 +22,8 @@ const tabScreens = [
   },
   {
     id: '3',
-    // name: "Cart",
-    // component: QRStack,
+    name: 'Cart',
+    component: DashboardStack,
     activeIcon: cart_icon,
     title: 'Cart',
   },

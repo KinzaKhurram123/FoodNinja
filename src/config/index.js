@@ -108,3 +108,27 @@ export const notifications = [
     time: 'Recently',
   },
 ];
+
+export const cart_items = [
+  {
+    id: 1,
+    name: 'Spacy Fresh crab',
+    image: images.popular_food4,
+    restaurant_name: 'Warung kita',
+    price: '$7',
+  },
+  {
+    id: 2,
+    name: 'Spacy Fresh crab',
+    image: images.popular_food5,
+    restaurant_name: 'Wijie kita',
+    price: '$5',
+  },
+  {
+    id: 3,
+    name: 'Spacy Fresh crab',
+    image: images.popular_food6,
+    restaurant_name: 'Noodle kita',
+    price: '$15',
+  },
+];

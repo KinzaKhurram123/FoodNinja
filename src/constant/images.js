@@ -9,6 +9,9 @@ import banner_image from '../assets/images/banner.png';
 import popular_food1 from '../assets/images/popular_food_items/popular_food1.png';
 import popular_food2 from '../assets/images/popular_food_items/popular_food3.png';
 import popular_food3 from '../assets/images/popular_food_items/popular_food3.png';
+import popular_food4 from '../assets/images/popular_food_items/popular_food4.png';
+import popular_food5 from '../assets/images/popular_food_items/popular_food5.png';
+import popular_food6 from '../assets/images/popular_food_items/popular_food6.png';
 import restaurant_image1 from '../assets/images/restaurant_image1.png';
 import restaurant_image2 from '../assets/images/restaurant_image2.png';
 import restaurant_image3 from '../assets/images/restaurant_image3.png';
@@ -32,6 +35,9 @@ export default {
   popular_food1,
   popular_food2,
   popular_food3,
+  popular_food4,
+  popular_food5,
+  popular_food6,
   restaurant_image1,
   restaurant_image2,
   restaurant_image3,

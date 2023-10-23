@@ -10,13 +10,13 @@ const Stack = createStackNavigator();
 const Routes = () => {
   return (
     <NavigationContainer>
-       <Stack.Navigator
-      initialRouteName="Splash"
-      screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Splash" component={Splash} />
-      <Stack.Screen name="AuthStack" component={AuthStack} />
-      <Stack.Screen name="TabNavigation" component={TabNavigation} />
-    </Stack.Navigator>
+      <Stack.Navigator
+        initialRouteName="Splash"
+        screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="AuthStack" component={AuthStack} />
+        <Stack.Screen name="TabNavigation" component={TabNavigation} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

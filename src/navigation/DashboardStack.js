@@ -8,6 +8,7 @@ import ExploreMenu from '../screens/Main/ExpoloreMenu';
 import Filter from '../screens/Main/Filter';
 import Chats from '../screens/Main/Chat';
 import Notification from '../screens/Main/Notification';
+import Cart from '../screens/Main/Cart';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const DashboardStack = () => {
       <Stack.Screen name="Filter" component={Filter} />
       <Stack.Screen name="Chats" component={Chats} />
       <Stack.Screen name="Notification" component={Notification} />
+      <Stack.Screen name="Cart" component={Cart} />
     </Stack.Navigator>
   );
 };
