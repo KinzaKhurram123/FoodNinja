@@ -6,9 +6,8 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   heading_Text: {
-    color: COLORS.white,
-    ...FONTS.Bold25,
-    textAlign: 'center',
+    color: COLORS.input_text,
+    ...FONTS.Bold13,
     fontWeight: '700',
   },
 
@@ -35,10 +34,10 @@ export const styles = StyleSheet.create({
     ...FONTS.light14,
     color: COLORS.input_text,
   },
-  menu_price: {
-    color: COLORS.yellow,
-    ...FONTS.Bold20,
-    paddingRight: SIZES.padding2,
+  text: {
+    color: COLORS.white,
+    ...FONTS.light13,
+    width: '80%',
   },
   plus_btn: {
     backgroundColor: COLORS.primary,
@@ -52,5 +51,11 @@ export const styles = StyleSheet.create({
     paddingHorizontal: SIZES.padding2,
     borderRadius: 8,
     opacity: 0.6,
+  },
+  btn_view: {
+    backgroundColor: COLORS.text_input,
+    borderRadius: SIZES.padding2,
+    padding: SIZES.padding,
+    marginTop: SIZES.padding,
   },
 });

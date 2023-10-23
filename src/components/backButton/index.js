@@ -4,11 +4,15 @@ import {Icon, Text} from '..';
 import {FONTS, SIZES} from '../../constant';
 import {back_icon} from '../../assets/icons';
 
-const BackButton = ({text,onpress}) => {
+const BackButton = ({text, onpress}) => {
   return (
     <TouchableOpacity
-    onPress={onpress}
-      style={{alignItems: 'flex-start', marginTop: SIZES.padding * 2}}>
+      onPress={onpress}
+      style={{
+        alignItems: 'flex-start',
+        marginTop: SIZES.padding * 2,
+        paddingHorizontal: SIZES.padding,
+      }}>
       <Icon name={back_icon} />
       <Text text={text} style={{...FONTS.Bold24, marginTop: SIZES.padding}} />
     </TouchableOpacity>
