@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     ...FONTS.light14,
     color: COLORS.input_text,
+    paddingBottom: SIZES.padding,
   },
   more_text: {
     ...FONTS.Bold14,
@@ -27,16 +28,14 @@ export const styles = StyleSheet.create({
   text_view: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: SIZES.padding,
+    paddingVertical: SIZES.padding2,
   },
   restaurant_view: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: COLORS.text_input,
-    paddingVertical: SIZES.padding,
-    width: 150,
-    marginRight: SIZES.padding2,
-    marginTop: SIZES.padding,
+    marginHorizontal: SIZES.padding2,
+    paddingHorizontal: SIZES.padding,
     borderRadius: SIZES.padding2,
   },
   restaurant_heading: {
@@ -47,7 +46,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: COLORS.text_input,
+    backgroundColor: COLORS.+text_input,
     marginTop: SIZES.padding,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
