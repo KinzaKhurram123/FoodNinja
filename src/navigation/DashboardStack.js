@@ -9,8 +9,9 @@ import Filter from '../screens/Main/Filter';
 import Chats from '../screens/Main/Chat';
 import Notification from '../screens/Main/Notification';
 import Cart from '../screens/Main/Cart';
-import ConfrimOrder from '../screens/Main/ConfirmOrder';
 import ConfirmOrder from '../screens/Main/ConfirmOrder';
+import EditPaymentMethod from '../screens/Main/EditPaymentMethod';
+import ConfirmLocation from '../screens/Main/ConfirmLocation';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,8 @@ const DashboardStack = () => {
       <Stack.Screen name="Notification" component={Notification} />
       <Stack.Screen name="Cart" component={Cart} />
       <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
+      <Stack.Screen name="EditPaymentMethod" component={EditPaymentMethod} />
+      <Stack.Screen name="ConfirmLocation" component={ConfirmLocation} />
     </Stack.Navigator>
   );
 };

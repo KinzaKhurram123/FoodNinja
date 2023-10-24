@@ -6,6 +6,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.black,
   },
+  header_view: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   heading_Text: {
     color: COLORS.primary,
     ...FONTS.Bold24,
@@ -16,5 +21,10 @@ export const styles = StyleSheet.create({
   text: {
     ...FONTS.Bold16,
     marginVertical: SIZES.padding,
+  },
+  btn: {
+    width: 150,
+    alignSelf: 'center',
+    marginBottom: SIZES.padding * 2,
   },
 });

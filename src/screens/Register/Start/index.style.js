@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   heading_Text: {
     color: COLORS.white,
-    ...FONTS.Bold25,
+    ...FONTS.Bold24,
     textAlign: 'center',
     fontWeight: '700',
   },

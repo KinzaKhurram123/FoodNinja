@@ -58,4 +58,15 @@ export const styles = StyleSheet.create({
     padding: SIZES.padding,
     marginTop: SIZES.padding,
   },
+  payment_method: {
+    flexDirection: 'row',
+    gap: SIZES.padding2,
+    marginTop: SIZES.padding2,
+    gap: SIZES.padding * 3,
+  },
+  location_method_view: {
+    flexDirection: 'row',
+    gap: SIZES.padding2,
+    marginTop: SIZES.padding2,
+  },
 });

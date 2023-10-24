@@ -4,13 +4,7 @@ import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
-  },
-  main_view: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    marginVertical: SIZES.padding,
-    paddingHorizontal: SIZES.padding * 1.5,
+    backgroundColor: COLORS.black,
   },
   heading_Text: {
     color: COLORS.white,
@@ -19,17 +13,22 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
   },
   text: {
-    ...FONTS.Regular14,
+    ...FONTS.Bold16,
     marginVertical: SIZES.padding,
   },
-  header_view: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: SIZES.padding * 4,
+  main_view: {
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    paddingHorizontal: SIZES.padding,
+    paddingTop: SIZES.padding * 3,
+    flex: 1,
   },
   btn: {
     width: 150,
-    alignSelf: 'center',
-    marginTop: SIZES.padding,
+  },
+
+  text_btn: {
+    ...FONTS.Bold12,
+    marginVertical: SIZES.padding,
   },
 });

@@ -2594,6 +2594,11 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.3.tgz"
   integrity sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==
 
+clear-cache@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/clear-cache/-/clear-cache-1.1.0.tgz"
+  integrity sha512-LomQceOFiom7v+aaGwj8+oeK4YtoMVz5Hg72L1c6mfhdXReTAET30wxVHmUDqUG86qIKAxY2zKPpN+Xa3IdaDA==
+
 cli-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/cli-cursor/-/cli-cursor-3.1.0.tgz"
@@ -5706,6 +5711,11 @@ react-native-svg@^13.14.0:
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
+
+react-native-text-input-mask@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-text-input-mask/-/react-native-text-input-mask-3.2.0.tgz#d8c4f45e6a2ae34f2b704b2c9c1c5441d109e4e0"
+  integrity sha512-YAV1MeZr5ME/GOUBSPCjAVCcDMPNcyoXw5FOdPkA8GK9Q+t1TcvD2QOGWglVxc9vAKMddub7EZ2wQhk2ph+ElQ==
 
 react-native@0.72.5:
   version "0.72.5"

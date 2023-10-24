@@ -7,10 +7,11 @@ export const styles = StyleSheet.create({
     backgroundColor: COLORS.black,
   },
   main_view: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    marginVertical: SIZES.padding,
-    paddingHorizontal: SIZES.padding * 1.5,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: SIZES.padding,
+    flex: 1,
+    marginTop: SIZES.padding * 3,
   },
   heading_Text: {
     color: COLORS.white,
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
   },
   btn_location: {
-    backgroundColor: Theme.text_input,
+    backgroundColor: COLORS.text_input,
     padding: SIZES.padding2,
     alignItems: 'center',
     borderRadius: SIZES.padding2,

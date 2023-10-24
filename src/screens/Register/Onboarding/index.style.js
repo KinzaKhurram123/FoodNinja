@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   heading_Text: {
     color: COLORS.white,
-    ...FONTS.Bold25,
+    ...FONTS.Bold24,
     textAlign: 'center',
     fontWeight: '700',
   },
@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
   main_view: {
     marginVertical: SIZES.padding * 2,
     alignItems: 'center',
+    flex: 1,
   },
   sub_view: {
     justifyContent: 'center',

@@ -17,10 +17,11 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
   },
   main_view: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'flex-start',
-    marginVertical: SIZES.padding * 2,
-    paddingHorizontal: SIZES.padding * 1.5,
+    paddingHorizontal: SIZES.padding,
+    paddingTop: SIZES.padding * 2,
+    flex: 1,
   },
   btn: {
     width: 150,
@@ -31,5 +32,10 @@ export const styles = StyleSheet.create({
   text_btn: {
     ...FONTS.Bold12,
     marginVertical: SIZES.padding,
+  },
+  btn_view: {
+    justifyContent: 'flex-end',
+    marginBottom: SIZES.padding,
+    alignSelf: 'center',
   },
 });

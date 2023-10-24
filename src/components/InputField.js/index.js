@@ -25,8 +25,7 @@ const InputField = ({
   returnKeyType,
   onChangeText,
   autoFocus,
-  rightIcon = false,
-  righticon
+  righticon,
 }) => {
   const [hidePassword, setHidePassword] = useState(true);
 
@@ -45,22 +44,18 @@ const InputField = ({
         <TextInput
           multiline={multiline}
           ref={forwardRef}
-          cursorColor={COLORS.text_input}
+          cursorColor={COLORS.white}
           autoCapitalize={autoCapitalize}
           onChangeText={onChangeText}
           keyboardType={keyboardType}
           placeholder={placeholder}
           secureTextEntry={secureText && hidePassword}
           style={[styles.input, inputStyle]}
-          placeholderTextColor={COLORS.black}
+          placeholderTextColor={COLORS.input_text}
           defaultValue={defaultValue}
           value={value}
           autoFocus={autoFocus}
           onFocus={onFocus}
-          //   onBlur={() => {
-          //     setFieldTouched(name);
-          //     onBlur(name);
-          //   }}
           maxLength={maxLength}
           returnKeyType={returnKeyType}
           editable={isEdit}
@@ -68,11 +63,8 @@ const InputField = ({
           blurOnSubmit={false}
           onSubmitEditing={onSubmitEditing}
         />
-        {rightIcon && (
-          <IconComponent
-            name={righticon ? righticon : null}
-            style={[styles.icon, iconStyle]}
-          />
+        {righticon && (
+          <IconComponent name={righticon} style={[styles.icon, iconStyle]} />
         )}
       </View>
     </>
@@ -80,7 +72,6 @@ const InputField = ({
 };
 const styles = StyleSheet.create({
   errorInput: {
-    // borderColor: COLORS.error,
     borderWidth: 0.5,
   },
   main_view: {
@@ -91,7 +82,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.padding2,
     backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding,
-    gap: 12,
+    gap: 10,
   },
   icon: {
     width: '7%',
@@ -100,9 +91,10 @@ const styles = StyleSheet.create({
     flex: 1,
     ...FONTS.Regular12,
     color: COLORS.text_color,
-    marginLeft: 6,
+    ...FONTS.Medium13,
     height: 55,
     textAlignVertical: 'center',
+    opacity: 0.3,
   },
   errorText: {
     ...FONTS.Regular10,

@@ -23,9 +23,11 @@ export const styles = StyleSheet.create({
   main_view: {
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
-    backgroundColor: COLORS.black,
+
     flex: 1,
-    borderTopStartRadius: SIZES.padding,
-    borderTopEndRadius: SIZES.padding,
+    backgroundColor: COLORS.black,
+    borderTopStartRadius: SIZES.padding * 2,
+    borderTopEndRadius: SIZES.padding * 2,
+    marginTop: -SIZES.padding * 2,
   },
 });

@@ -1,27 +1,26 @@
-import {
-  SafeAreaView,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons';
-import camra_icon from '../../../assets/icons';
-import gallary_icon from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
+import {back_icon, camra_icon, gallary_icon} from '../../../assets/icons';
 
 const UploadImage = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
         <View style={styles.main_view}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity
+            style={{alignSelf: 'flex-start'}}
+            onPress={() => navigation.goBack()}>
             <Icon name={back_icon} />
           </TouchableOpacity>
           <View>
-            <Text text={'Payment Method'} style={styles.heading_Text} />
+            <Text
+              text={'Upload Your Photo Profile'}
+              style={styles.heading_Text}
+            />
             <Text
               text={
                 'This data will be displayed in your account profile for security'

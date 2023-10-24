@@ -10,7 +10,7 @@ export {default as google_icon} from './google-icon';
 export {default as home_icon} from './home-icon';
 export {default as location_icon} from './location-icon';
 export {default as mail_icon} from './mail-icon';
-export {default as massage_icon} from './massage-icon';
+export {default as message_icon} from './message-icon';
 export {default as msg_icon} from './msg-icon';
 export {default as notification_icon} from './notification-icon';
 export {default as pasword_icon} from './pasword-icon';

@@ -8,6 +8,7 @@ import {Icon, Text} from '../../../components';
 import {COLORS, SIZES} from '../../../constant';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {paypal_icon} from '../../../assets/icons';
+import {OrderDetails} from './component';
 const ConfirmOrder = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
@@ -21,16 +22,12 @@ const ConfirmOrder = ({navigation}) => {
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <Text text={'Deliver To'} style={styles.heading_Text} />
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ConfirmLocation')}>
                 <Text text={'Edit'} style={{color: COLORS.primary}} />
               </TouchableOpacity>
             </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                gap: SIZES.padding2,
-                marginTop: SIZES.padding2,
-              }}>
+            <View style={styles.location_method_view}>
               <Icon name={locationIcon} />
 
               <Text
@@ -43,21 +40,17 @@ const ConfirmOrder = ({navigation}) => {
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <Text text={'Payment Method'} style={styles.heading_Text} />
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('EditPaymentMethod')}>
                 <Text text={'Edit'} style={{color: COLORS.primary}} />
               </TouchableOpacity>
             </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                gap: SIZES.padding2,
-                marginTop: SIZES.padding2,
-                gap: SIZES.padding * 3,
-              }}>
+            <View style={styles.payment_method}>
               <Icon name={paypal_icon} />
               <Text text={'2121 6352 8465 ****'} style={styles.text} />
             </View>
           </View>
+          <OrderDetails />
         </View>
       </ImageContainer>
     </SafeAreaView>

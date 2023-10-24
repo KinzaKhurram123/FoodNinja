@@ -14,8 +14,8 @@ const ImageContainer = ({children}) => {
     <View style={{flex: 1, backgroundColor: COLORS.black}}>
       <ImageBackground
         source={images.pattren_image}
+        imageStyle={{height: '30%'}}
         style={{
-          height: '30%',
           flex: 1,
         }}>
         {children}

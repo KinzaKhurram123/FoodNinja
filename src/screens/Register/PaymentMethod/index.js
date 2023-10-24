@@ -1,18 +1,22 @@
 import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons';
-import {paypal_icon, visa_icon} from '../../../assets/icons';
-import payaneer_icon from '../../../assets/icons';
+import {Button, Icon, Text} from '../../../components';
+import {
+  paypal_icon,
+  back_icon,
+  visa_icon,
+  payoneer_icon,
+} from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
 const PaymentMethod = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
         <View style={styles.main_view}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity
+            style={{alignSelf: 'flex-start'}}
+            onPress={() => navigation.goBack()}>
             <Icon name={back_icon} />
           </TouchableOpacity>
           <View>
@@ -31,7 +35,7 @@ const PaymentMethod = ({navigation}) => {
             <Icon name={visa_icon} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.social_btn}>
-            <Icon name={payaneer_icon} />
+            <Icon name={payoneer_icon} />
           </TouchableOpacity>
         </View>
         <View style={styles.btn_view}>

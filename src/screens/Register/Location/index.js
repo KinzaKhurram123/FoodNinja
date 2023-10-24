@@ -3,9 +3,8 @@ import React from 'react';
 import {styles} from './index.style';
 import {FONTS, images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
-import location_icon from '../../../assets/icons';
+import { back_icon, location_icon } from '../../../assets/icons';
 
 const Location = ({navigation}) => {
   return (

@@ -3,3 +3,4 @@ export {default as Button} from './Button';
 export {default as InputField} from './InputField.js';
 export {default as CustomCheckBox} from './CustomCheckbox';
 export {default as Icon} from './Icon';
+export {default as MaskInput} from './MaskInput'

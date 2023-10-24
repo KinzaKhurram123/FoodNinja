@@ -20,14 +20,15 @@ export const styles = StyleSheet.create({
     marginTop: SIZES.padding * 4,
   },
   main_view: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: SIZES.padding,
-    paddingHorizontal: SIZES.padding * 1.5,
+    paddingHorizontal: SIZES.padding,
+    flex: 1,
   },
   signup_text: {
     ...FONTS.Regular19,
     color: COLORS.white,
+    marginTop: SIZES.padding,
   },
   btn_text: {
     ...FONTS.Regular14,
@@ -43,5 +44,11 @@ export const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     marginTop: SIZES.padding,
+  },
+  forget_text: {
+    ...FONTS.Regular12,
+    color: COLORS.primary,
+    textDecorationLine: 'underline',
+    marginBottom: SIZES.padding,
   },
 });

@@ -30,6 +30,7 @@ const Restaurant = ({navigation}) => {
             data={nearest_restaurant}
             keyExtractor={item => item.id}
             numColumns={2}
+            showsVerticalScrollIndicator={false}
             ListFooterComponent={<View style={{height: SIZES.padding}} />}
             columnWrapperStyle={{justifyContent: 'space-between'}}
             renderItem={({item}) => {

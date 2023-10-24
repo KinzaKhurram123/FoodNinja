@@ -15,12 +15,14 @@ export const styles = StyleSheet.create({
   text: {
     ...FONTS.Bold16,
     marginVertical: SIZES.padding,
+    color: COLORS.white,
   },
   main_view: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    marginVertical: SIZES.padding * 2,
-    paddingHorizontal: SIZES.padding * 1.5,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: SIZES.padding,
+    paddingTop: SIZES.padding * 2,
+    flex: 1,
   },
   btn: {
     width: 150,
@@ -30,5 +32,15 @@ export const styles = StyleSheet.create({
   text_btn: {
     ...FONTS.Bold12,
     marginVertical: SIZES.padding,
+  },
+  cell: {
+    width: 60,
+    height: 55,
+    lineHeight: 55,
+    backgroundColor: COLORS.text_input,
+    color: COLORS.white,
+    borderRadius: SIZES.padding,
+    textAlign: 'center',
+    ...FONTS.Medium13,
   },
 });

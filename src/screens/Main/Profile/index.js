@@ -7,14 +7,15 @@ import {images, SIZES} from '../../../constant';
 const Profile = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Image
-        source={images.profile}
-        style={{
-          height: '40%',
-          width: '100%',
-          paddingBottom: SIZES.padding,
-        }}
-      />
+      <View style={{height: '35%', width: "100%"}}>
+        <Image
+          source={images.profile}
+          style={{
+            height: '100%',
+            width: '100%',
+          }}
+        />
+      </View>
       <View style={styles.main_view}></View>
     </SafeAreaView>
   );

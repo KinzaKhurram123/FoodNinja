@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {FONTS, SIZES} from '../../constant';
 import {COLORS} from '../../constant/themes';
-import {Icons, Loader} from '../index';
+import {Loader} from '../index';
 
 const CustomButton = ({
   style,

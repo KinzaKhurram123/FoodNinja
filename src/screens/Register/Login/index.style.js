@@ -11,22 +11,24 @@ export const styles = StyleSheet.create({
     ...FONTS.SplashText,
   },
   text: {
-    ...FONTS.Regular14,
+    ...FONTS.Bold12,
   },
   header_view: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: SIZES.padding * 4,
+    marginTop: SIZES.padding * 2.5,
   },
   main_view: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: SIZES.padding,
-    paddingHorizontal: SIZES.padding * 1.5,
+    paddingHorizontal: SIZES.padding,
+    paddingTop: SIZES.padding,
+    flex: 1,
   },
   login_text: {
-    ...FONTS.Regular24,
-    color: COLORS.dark_blue,
+    ...FONTS.Regular19,
+    color: COLORS.white,
+    marginTop: SIZES.padding2,
   },
   btn_row: {
     flexDirection: 'row',
@@ -45,19 +47,25 @@ export const styles = StyleSheet.create({
   btn_text: {
     ...FONTS.Regular14,
     color: COLORS.input_text,
+    opacity: 0.4,
   },
   btn_innerView: {
     flexDirection: 'row',
     gap: SIZES.padding2,
   },
   forget_text: {
-    ...FONTS.Regular14,
+    ...FONTS.Regular12,
     color: COLORS.primary,
     textDecorationLine: 'underline',
   },
   btn: {
-    width: 200,
+    width: 150,
     alignSelf: 'center',
     marginTop: SIZES.padding,
+  },
+  signup_btn: {
+    color: COLORS.primary,
+    ...FONTS.Bold12,
+    marginBottom: SIZES.padding,
   },
 });
