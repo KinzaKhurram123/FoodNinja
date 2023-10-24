@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: COLORS.+text_input,
+    backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
