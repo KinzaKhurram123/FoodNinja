@@ -12,11 +12,11 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
   },
   text: {
-    ...FONTS.Bold20,
+    ...FONTS.Bold16,
     textAlign: 'left',
-    paddingLeft: SIZES.padding,
   },
   light_text: {
+    textAlign: 'center',
     ...FONTS.light14,
     color: COLORS.input_text,
   },
@@ -24,45 +24,13 @@ export const styles = StyleSheet.create({
     paddingHorizontal: SIZES.padding,
     paddingVertical: SIZES.padding,
     flex: 1,
-    backgroundColor: COLORS.black,
-    borderTopStartRadius: SIZES.padding * 2,
-    borderTopEndRadius: SIZES.padding * 2,
-    marginTop: -SIZES.padding * 2,
   },
-  member_btn: {
-    backgroundColor: COLORS.yellow,
-    width: '45%',
-    alignItems: 'center',
-    padding: SIZES.padding2,
-    borderRadius: SIZES.padding,
-    opacity: 0.5,
-  },
-  member_btn_text: {
-    ...FONTS.Medium13,
-    color: COLORS.yellow,
-  },
-  heading_view: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: SIZES.padding,
-  },
-  voucher_view: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    gap: SIZES.padding,
-    alignItems: 'center',
-    backgroundColor: COLORS.text_input,
-    borderRadius: SIZES.padding2,
-    padding: SIZES.padding2,
-    marginBottom: SIZES.padding,
-  },
-  favorite_food_view: {
-    backgroundColor: COLORS.text_input,
+  popular_menu_view: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: SIZES.padding,
+    backgroundColor: COLORS.text_input,
+    marginTop: SIZES.padding2,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
   },
@@ -82,10 +50,18 @@ export const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: COLORS.primary,
+    padding: 10,
     borderRadius: SIZES.padding2,
-    padding: 8,
   },
-  btn_text: {
-    ...FONTS.light14,
+  unactive_status: {
+    backgroundColor: COLORS.white,
+    padding: 10,
+    borderRadius: SIZES.padding2,
+  },
+  active: {
+    color: COLORS.white,
+  },
+  inactive: {
+    color: COLORS.black,
   },
 });

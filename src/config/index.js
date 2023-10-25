@@ -132,3 +132,104 @@ export const cart_items = [
     price: '$15',
   },
 ];
+
+export const restaurant_items = [
+  {
+    id: 1,
+    name: 'Spacy Fresh crab',
+    image: images.pizza,
+    price: '$7',
+  },
+  {
+    id: 2,
+    name: 'Spacy Fresh crab',
+    image: images.crabs,
+    price: '$5',
+  },
+  {
+    id: 3,
+    name: 'Spacy Fresh crab',
+    image: images.pizza,
+    price: '$15',
+  },
+  {
+    id: 4,
+    name: 'Spacy Fresh crab',
+    image: images.crabs,
+    price: '$5',
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Dianne Russell',
+    remark: 'This Is great, So delicious! You Must Here, With Your family . . ',
+    image: images.person_1,
+    ranking: '5',
+  },
+  {
+    id: 2,
+    name: 'Dianne Russell',
+    remark: 'This Is great, So delicious! You Must Here, With Your family . . ',
+    image: images.person_2,
+    ranking: '5',
+  },
+  {
+    id: 3,
+    name: 'Dianne Russell',
+    remark: 'This Is great, So delicious! You Must Here, With Your family . . ',
+    image: images.person_3,
+    ranking: '5',
+  },
+  {
+    id: 4,
+    name: 'Dianne Russell',
+    remark: 'This Is great, So delicious! You Must Here, With Your family . . ',
+    image: images.person_1,
+    ranking: '5',
+  },
+];
+
+export const my_order_list = [
+  {
+    id: 1,
+    name: 'Herbal Pancake',
+    image: images.popular_food1,
+    restaurant_name: 'Warung Herbal',
+    price: '$7',
+    status: 'Proccess',
+  },
+  {
+    id: 2,
+    name: 'Fruit Salad',
+    image: images.popular_food2,
+    restaurant_name: 'Wijie Resto',
+    price: '$5',
+    status: 'Proccess',
+  },
+  {
+    id: 3,
+    name: 'Green Noddle',
+    image: images.popular_food3,
+    restaurant_name: 'Noodle Home',
+    price: '$15',
+    status: 'Reorder',
+  },
+  {
+    id: 4,
+    name: 'Green Noddle',
+    image: images.popular_food3,
+    restaurant_name: 'Noodle Home',
+    price: '$15',
+    status: 'Reorder',
+  },
+  {
+    id: 5,
+    name: 'Green Noddle',
+    image: images.popular_food3,
+    restaurant_name: 'Noodle Home',
+    price: '$15',
+    status: 'Reorder',
+  },
+];

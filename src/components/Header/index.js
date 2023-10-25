@@ -16,6 +16,8 @@ const Headers = ({
   onpressFilters,
   filter = false,
   searchbar_style,
+  onpressSearch,
+  isEdit
 }) => {
   return (
     <View style={[styles.main_view, style]}>
@@ -30,12 +32,15 @@ const Headers = ({
         </TouchableOpacity>
       </View>
       {searchbar && (
-        <View style={styles.sub_view}>
-          <InputField
-            icon={serachbar_icon}
-            placeholder={'What do you want to order?'}
-            style={[styles.search, searchbar_style]}
-          />
+        <View style={styles.searchView}>
+          <TouchableOpacity style={styles.search} onPress={onpressSearch}>
+            <InputField
+              icon={serachbar_icon}
+              isEdit={isEdit}
+              placeholder={'What do you want to order?'}
+              style={[styles.search, searchbar_style]}
+            />
+          </TouchableOpacity>
           {filter && (
             <TouchableOpacity
               onPress={onpressFilters}

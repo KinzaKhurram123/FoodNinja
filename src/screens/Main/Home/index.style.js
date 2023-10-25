@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Animated, StyleSheet} from 'react-native';
 import {COLORS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
@@ -28,13 +28,13 @@ export const styles = StyleSheet.create({
   text_view: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: SIZES.padding2,
+    paddingVertical: SIZES.padding,
   },
   restaurant_view: {
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: COLORS.text_input,
-    marginHorizontal: SIZES.padding2,
+    marginRight: SIZES.padding2,
     paddingHorizontal: SIZES.padding,
     borderRadius: SIZES.padding2,
   },
@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: COLORS.text_input,
-    marginTop: SIZES.padding,
+    marginBottom: SIZES.padding,
     padding: SIZES.padding2,
     borderRadius: SIZES.padding2,
   },
@@ -65,4 +65,23 @@ export const styles = StyleSheet.create({
     ...FONTS.Bold20,
     paddingRight: SIZES.padding2,
   },
+  banner_text: {
+    ...FONTS.Medium19,
+    width: 150,
+    paddingLeft: SIZES.padding,
+  },
+  buy_now_btn: {
+    backgroundColor: COLORS.white,
+    borderRadius: SIZES.padding2,
+    padding: SIZES.padding2,
+    marginTop: SIZES.padding2,
+    marginRight: SIZES.padding * 2.5,
+  },
+  buy_now_text: {color: COLORS.primary, ...FONTS.light13},
+  banner: {
+    backgroundColor: COLORS.primary,
+    borderRadius: SIZES.padding2,
+    height: '20%',
+  },
+  banner_view: {padding: SIZES.padding, alignItems: 'flex-end'},
 });

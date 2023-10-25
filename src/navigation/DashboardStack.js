@@ -12,6 +12,13 @@ import Cart from '../screens/Main/Cart';
 import ConfirmOrder from '../screens/Main/ConfirmOrder';
 import EditPaymentMethod from '../screens/Main/EditPaymentMethod';
 import ConfirmLocation from '../screens/Main/ConfirmLocation';
+import Voucher from '../screens/Main/Voucher';
+import OrderDetail from '../screens/Main/OrderDetail';
+import MenuDetails from '../screens/Main/MenuDetail';
+import MyOrders from '../screens/Main/MyOrders';
+import Location from '../screens/Register/Location';
+import LocationMap from '../screens/Main/Location';
+import ChatsDetails from '../screens/Main/ChatDetails';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +36,12 @@ const DashboardStack = () => {
       <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
       <Stack.Screen name="EditPaymentMethod" component={EditPaymentMethod} />
       <Stack.Screen name="ConfirmLocation" component={ConfirmLocation} />
+      <Stack.Screen name="Voucher" component={Voucher} />
+      <Stack.Screen name="OrderDetail" component={OrderDetail} />
+      <Stack.Screen name="MenuDetails" component={MenuDetails} />
+      <Stack.Screen name="MyOrders" component={MyOrders} />
+      <Stack.Screen name="LocationMap" component={LocationMap} />
+      <Stack.Screen name="ChatsDetails" component={ChatsDetails} />
     </Stack.Navigator>
   );
 };

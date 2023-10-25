@@ -6,6 +6,8 @@ import vector_background from '../assets/images/vector_background.png';
 import pattren_image from '../assets/images/pattren.png';
 import congrats_background from '../assets/images/congrats.png';
 import banner_image from '../assets/images/banner.png';
+import banner_image2 from '../assets/images/banner_image2.png';
+import banner_image3 from '../assets/images/banner_image3.png';
 import popular_food1 from '../assets/images/popular_food_items/popular_food1.png';
 import popular_food2 from '../assets/images/popular_food_items/popular_food3.png';
 import popular_food3 from '../assets/images/popular_food_items/popular_food3.png';
@@ -20,9 +22,13 @@ import restaurant_image5 from '../assets/images/restaurant_image5.png';
 import restaurant_image6 from '../assets/images/restaurant_image6.png';
 import person_1 from '../assets/images/person1.png';
 import person_2 from '../assets/images/person2.png';
+import restaurant from '../assets/images/restaurant.png';
 import person_3 from '../assets/images/person3.png';
 import profile from '../assets/images/profile.png';
-
+import pizza from '../assets/images/pizza.png';
+import crabs from '../assets/images/crabs.png';
+import menu_item from '../assets/images/menu_item.png';
+import map from '../assets/images/map.png';
 export default {
   logo,
   background,
@@ -48,4 +54,11 @@ export default {
   person_2,
   person_3,
   profile,
+  banner_image2,
+  banner_image3,
+  restaurant,
+  pizza,
+  crabs,
+  menu_item,
+  map,
 };

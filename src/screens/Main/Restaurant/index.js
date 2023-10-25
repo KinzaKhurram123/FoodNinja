@@ -35,7 +35,9 @@ const Restaurant = ({navigation}) => {
             columnWrapperStyle={{justifyContent: 'space-between'}}
             renderItem={({item}) => {
               return (
-                <TouchableOpacity style={styles.restaurant_view}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('OrderDetail')}
+                  style={styles.restaurant_view}>
                   <Image source={item.image} />
                   <Text text={item.name} style={styles.restaurant_heading} />
                   <Text text={item.mins} style={styles.light_text} />

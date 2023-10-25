@@ -10,10 +10,10 @@ import ImageContainer from '../../../components/ImageContainer';
 import {styles} from './index.style';
 import Headers from '../../../components/Header';
 import {Text} from '../../../components';
-import {popular_menu} from '../../../config';
+import {my_order_list, popular_menu} from '../../../config';
 import {SIZES} from '../../../constant';
 
-const ExploreMenu = ({navigation}) => {
+const MyOrders = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
@@ -22,11 +22,11 @@ const ExploreMenu = ({navigation}) => {
           onpressFilters={() => navigation.navigate('Filter')}
           heading_Text={'Find Your Favorite Food'}
           searchbar={true}
+          isEdit={true}
         />
         <View style={styles.main_view}>
-          <Text text={'Popular Menu'} style={styles.text} />
           <FlatList
-            data={popular_menu}
+            data={my_order_list}
             keyExtractor={item => item.id}
             showsVerticalScrollIndicator={false}
             renderItem={({item}) => {
@@ -41,8 +41,23 @@ const ExploreMenu = ({navigation}) => {
                       text={item.restaurant_name}
                       style={styles.menu_light_text}
                     />
+                    <Text text={item.price} style={styles.menu_price} />
                   </View>
-                  <Text text={item.price} style={styles.menu_price} />
+                  <TouchableOpacity
+                    style={
+                      item.status === 'Reorder'
+                        ? styles.btn
+                        : styles.unactive_status
+                    }>
+                    <Text
+                      text={item.status}
+                      style={
+                        item.status === 'Reorder'
+                          ? styles.active
+                          : styles.inactive
+                      }
+                    />
+                  </TouchableOpacity>
                 </TouchableOpacity>
               );
             }}
@@ -53,4 +68,4 @@ const ExploreMenu = ({navigation}) => {
   );
 };
 
-export default ExploreMenu;
+export default MyOrders;

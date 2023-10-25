@@ -25,7 +25,11 @@ const Chats = ({navigation}) => {
             showsVerticalScrollIndicator={false}
             renderItem={({item}) => {
               return (
-                <TouchableOpacity style={styles.chat_view}>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate('ChatsDetails');
+                  }}
+                  style={styles.chat_view}>
                   <Image source={item.image} />
                   <View style={{paddingHorizontal: SIZES.padding2}}>
                     <Text text={item.name} style={styles.chat_heading} />
