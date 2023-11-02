@@ -26,6 +26,7 @@ const InputField = ({
   onChangeText,
   autoFocus,
   righticon,
+  onPressRightIcon,
 }) => {
   const [hidePassword, setHidePassword] = useState(true);
 
@@ -64,7 +65,9 @@ const InputField = ({
           onSubmitEditing={onSubmitEditing}
         />
         {righticon && (
-          <IconComponent name={righticon} style={[styles.icon, iconStyle]} />
+          <TouchableOpacity onPress={onPressRightIcon}>
+            <IconComponent name={righticon} style={[styles.icon, iconStyle]} />
+          </TouchableOpacity>
         )}
       </View>
     </>
@@ -81,7 +84,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: SIZES.padding2,
     borderRadius: SIZES.padding2,
     backgroundColor: COLORS.text_input,
-    marginTop: SIZES.padding,
+    marginTop: SIZES.padding2,
     gap: 10,
   },
   icon: {

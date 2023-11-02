@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     marginVertical: SIZES.padding,
     paddingHorizontal: SIZES.padding,
     flex: 1,
-    marginTop: SIZES.padding * 3,
+    marginTop: SIZES.padding * 2,
   },
   social_btn: {
     height: 60,

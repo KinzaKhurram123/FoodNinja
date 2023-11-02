@@ -42,6 +42,7 @@ const TabBarComponent = ({navigation}) => {
       <FlatList
         data={tabScreens}
         horizontal
+        scrollEnabled={false}
         showsHorizontalScrollIndicator={false}
         keyExtractor={item => item.id}
         renderItem={({item}) => {

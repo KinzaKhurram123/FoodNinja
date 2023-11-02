@@ -9,6 +9,7 @@ import {
   payoneer_icon,
 } from '../../../assets/icons';
 import ImageContainer from '../../../components/ImageContainer';
+import {SIZES} from '../../../constant';
 const PaymentMethod = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
@@ -19,7 +20,7 @@ const PaymentMethod = ({navigation}) => {
             onPress={() => navigation.goBack()}>
             <Icon name={back_icon} />
           </TouchableOpacity>
-          <View>
+          <View style={{paddingRight: SIZES.padding}}>
             <Text text={'Payment Method'} style={styles.heading_Text} />
             <Text
               text={
@@ -28,13 +29,13 @@ const PaymentMethod = ({navigation}) => {
               style={styles.text}
             />
           </View>
-          <TouchableOpacity style={styles.social_btn}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.social_btn}>
             <Icon name={paypal_icon} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.social_btn}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.social_btn}>
             <Icon name={visa_icon} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.social_btn}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.social_btn}>
             <Icon name={payoneer_icon} />
           </TouchableOpacity>
         </View>

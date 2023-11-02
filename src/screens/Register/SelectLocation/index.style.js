@@ -1,30 +1,28 @@
 import {StyleSheet} from 'react-native';
-import {COLORS, FONTS, SIZES} from '../../../constant/themes';
+import {COLORS, RS, FONTS, SIZES} from '../../../constant/themes';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.black,
   },
-  header_view: {
-    flex: 1,
-    justifyContent: 'center',
+  main_view: {
+    justifyContent: 'space-between',
     alignItems: 'center',
+    paddingHorizontal: SIZES.padding,
+    flex: 1,
   },
   heading_Text: {
-    color: COLORS.primary,
+    color: COLORS.white,
     ...FONTS.Bold24,
     marginTop: SIZES.padding,
     fontWeight: '700',
   },
-  banner_image: {height: '40%', flex: 1, justifyContent: 'center'},
   text: {
-    ...FONTS.Bold21,
+    ...FONTS.Regular14,
     marginVertical: SIZES.padding,
   },
-  btn: {
-    width: 150,
-    alignSelf: 'center',
-    marginBottom: SIZES.padding * 2,
+  map: {
+    flex: 1,
   },
 });

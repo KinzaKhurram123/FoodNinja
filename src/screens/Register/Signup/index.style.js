@@ -50,5 +50,6 @@ export const styles = StyleSheet.create({
     color: COLORS.primary,
     textDecorationLine: 'underline',
     marginBottom: SIZES.padding,
+    opacity: 0.7,
   },
 });

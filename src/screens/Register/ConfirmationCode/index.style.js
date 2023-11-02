@@ -41,6 +41,11 @@ export const styles = StyleSheet.create({
     color: COLORS.white,
     borderRadius: SIZES.padding,
     textAlign: 'center',
-    ...FONTS.Medium13,
+    ...FONTS.Bold16,
+  },
+  codefield_view: {
+    backgroundColor: COLORS.text_input,
+    borderRadius: SIZES.padding,
+    paddingVertical: SIZES.padding,
   },
 });

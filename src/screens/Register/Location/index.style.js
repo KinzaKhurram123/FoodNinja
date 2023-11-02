@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
   },
   main_view: {
     justifyContent: 'space-between',
-    alignItems: 'center',
     paddingHorizontal: SIZES.padding,
     flex: 1,
     marginTop: SIZES.padding * 3,

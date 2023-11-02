@@ -50,7 +50,7 @@ const ConfirmOrder = ({navigation}) => {
               <Text text={'2121 6352 8465 ****'} style={styles.text} />
             </View>
           </View>
-          <OrderDetails />
+          <OrderDetails onPress={() => navigation.navigate('CompleteOrder')} />
         </View>
       </ImageContainer>
     </SafeAreaView>

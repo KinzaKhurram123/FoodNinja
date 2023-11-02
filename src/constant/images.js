@@ -29,6 +29,8 @@ import pizza from '../assets/images/pizza.png';
 import crabs from '../assets/images/crabs.png';
 import menu_item from '../assets/images/menu_item.png';
 import map from '../assets/images/map.png';
+import person_4 from '../assets/images/person_4.png';
+
 export default {
   logo,
   background,
@@ -61,4 +63,5 @@ export default {
   crabs,
   menu_item,
   map,
+  person_4,
 };

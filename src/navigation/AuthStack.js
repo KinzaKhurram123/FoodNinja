@@ -12,6 +12,7 @@ import Location from '../screens/Register/Location';
 import Congrats from '../screens/Register/Congrats';
 import ConformationCode from '../screens/Register/ConfirmationCode';
 import RessetPaswrod from '../screens/Register/ResetPasword';
+import SelectLocation from '../screens/Register/SelectLocation';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ const AuthStack = () => {
       <Stack.Screen name="Congrats" component={Congrats} />
       <Stack.Screen name="ConformationCode" component={ConformationCode} />
       <Stack.Screen name="RessetPaswrod" component={RessetPaswrod} />
+      <Stack.Screen name="SelectLocation" component={SelectLocation} />
     </Stack.Navigator>
   );
 };

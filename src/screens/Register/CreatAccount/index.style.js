@@ -20,11 +20,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     paddingHorizontal: SIZES.padding,
-    paddingTop: SIZES.padding * 3,
+    paddingTop: SIZES.padding * 2,
     flex: 1,
   },
   btn: {
     width: 150,
+    marginBottom: SIZES.padding,
   },
 
   text_btn: {

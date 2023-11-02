@@ -18,7 +18,7 @@ import {
 } from '../../../assets/icons';
 import {testimonials} from '../../../config';
 
-const MenuDetails = () => {
+const MenuDetails = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={{height: '45%', width: '100%'}}>
@@ -81,7 +81,6 @@ const MenuDetails = () => {
             data={testimonials}
             keyExtractor={item => item.id}
             showsVerticalScrollIndicator={false}
-            
             renderItem={({item}) => {
               return (
                 <TouchableOpacity style={styles.testimonials_view}>
@@ -113,7 +112,11 @@ const MenuDetails = () => {
               );
             }}
           />
-          <Button buttonText={'Add to Cart'} style={styles.btn}/>
+          <Button
+            buttonText={'Add to Cart'}
+            style={styles.btn}
+            onPress={() => navigation.navigate('Cart')}
+          />
         </ScrollView>
       </View>
     </SafeAreaView>

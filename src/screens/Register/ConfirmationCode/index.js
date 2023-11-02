@@ -42,29 +42,31 @@ const ConfirmationCode = ({navigation}) => {
                 }
                 style={styles.text}
               />
-              <CodeField
-                ref={ref}
-                {...props}
-                value={value}
-                onChangeText={setValue}
-                cellCount={CELL_COUNT}
-                rootStyle={styles.codeFieldRoot}
-                keyboardType="number-pad"
-                cursorColor={COLORS.white}
-                placeholder="1234"
-                textContentType="oneTimeCode"
-                autoComplete="sms-otp"
-                underlineColorAndroid={COLORS.transparent}
-                placeholderTextColor={COLORS.white}
-                renderCell={({index, symbol, isFocused}) => (
-                  <Text
-                    key={index}
-                    style={[styles.cell, isFocused && styles.focusCell]}
-                    onLayout={getCellOnLayoutHandler(index)}
-                    text={symbol || (isFocused ? <Cursor /> : null)}
-                  />
-                )}
-              />
+              <View style={styles.codefield_view}>
+                <CodeField
+                  ref={ref}
+                  {...props}
+                  value={value}
+                  onChangeText={setValue}
+                  cellCount={CELL_COUNT}
+                  rootStyle={styles.codeFieldRoot}
+                  keyboardType="number-pad"
+                  cursorColor={COLORS.white}
+                  placeholder="1234"
+                  textContentType="oneTimeCode"
+                  autoComplete="sms-otp"
+                  underlineColorAndroid={COLORS.transparent}
+                  placeholderTextColor={COLORS.white}
+                  renderCell={({index, symbol, isFocused}) => (
+                    <Text
+                      key={index}
+                      style={[styles.cell, isFocused && styles.focusCell]}
+                      onLayout={getCellOnLayoutHandler(index)}
+                      text={symbol || (isFocused ? <Cursor /> : null)}
+                    />
+                  )}
+                />
+              </View>
             </View>
           </View>
           <View

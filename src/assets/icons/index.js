@@ -31,3 +31,8 @@ export {default as location_icon_green} from './location-icon-green';
 export {default as rating_icon} from './rating-icon';
 export {default as star_icon} from './star-icon';
 export {default as bag_icon} from './bag-icon';
+export {default as call_icon} from './call-icon';
+export {default as volume_icon} from './volume-icon';
+export {default as decline_call} from './decline-call-icon';
+export {default as stars_call} from './star-icon';
+export {default as check_icon} from './check-icon';

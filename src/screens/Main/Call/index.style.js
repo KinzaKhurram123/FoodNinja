@@ -7,8 +7,8 @@ export const styles = StyleSheet.create({
     backgroundColor: COLORS.black,
   },
   heading_Text: {
-    color: COLORS.primary,
-    ...FONTS.SplashText,
+    color: COLORS.white,
+    ...FONTS.SemiBold19,
   },
   text: {
     ...FONTS.Bold12,
@@ -22,31 +22,23 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: SIZES.padding,
-    paddingTop: SIZES.padding,
+    paddingTop: SIZES.padding * 5,
     flex: 1,
-  },
-  card: {
-    backgroundColor: 'rgba(90, 108, 234, 0.07)',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: SIZES.padding,
-    padding: SIZES.padding,
-    marginHorizontal: SIZES.padding,
-    borderRadius: SIZES.padding,
   },
   btn: {
     width: 150,
     alignSelf: 'center',
     marginTop: SIZES.padding,
   },
-  call_icon: {
-    alignSelf: 'flex-end',
+  light_text: {
+    ...FONTS.Bold13,
+    marginTop: SIZES.padding,
   },
-  text_view: {
-    paddingRight: SIZES.padding * 2,
-  },
-  text_Input: {
-    backgroundColor: COLORS.black,
+  btn_view: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    gap: SIZES.padding,
+    marginBottom: SIZES.padding,
   },
 });

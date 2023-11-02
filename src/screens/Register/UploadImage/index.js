@@ -5,8 +5,29 @@ import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
 import ImageContainer from '../../../components/ImageContainer';
 import {back_icon, camra_icon, gallary_icon} from '../../../assets/icons';
+import ImageCropPicker from 'react-native-image-crop-picker';
 
 const UploadImage = ({navigation}) => {
+  const SelectFormGalary = () => {
+    ImageCropPicker.openPicker({
+      width: 1200,
+      height: 780,
+      cropping: true,
+    }).then(async image => {
+      console.log(image, 'sdbjsadasd');
+    });
+  };
+
+  const TakePhotofromCamra = () => {
+    ImageCropPicker.openCamera({
+      width: 1200,
+      height: 780,
+      cropping: true,
+    }).then(image => {
+      console.log(image, 'sdhgajsgd');
+    });
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
@@ -28,11 +49,15 @@ const UploadImage = ({navigation}) => {
               style={styles.text}
             />
           </View>
-          <TouchableOpacity style={styles.social_btn}>
+          <TouchableOpacity
+            style={styles.social_btn}
+            onPress={SelectFormGalary}>
             <Icon name={gallary_icon} />
             <Text text={'From Gallary'} style={styles.text_btn} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.social_btn}>
+          <TouchableOpacity
+            style={styles.social_btn}
+            onPress={TakePhotofromCamra}>
             <Icon name={camra_icon} />
             <Text text={'Take Photo'} style={styles.text_btn} />
           </TouchableOpacity>

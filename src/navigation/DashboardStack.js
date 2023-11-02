@@ -19,6 +19,8 @@ import MyOrders from '../screens/Main/MyOrders';
 import Location from '../screens/Register/Location';
 import LocationMap from '../screens/Main/Location';
 import ChatsDetails from '../screens/Main/ChatDetails';
+import Call from '../screens/Main/Call';
+import CompleteOrder from '../screens/Main/CompleteOrder';
 
 const Stack = createStackNavigator();
 
@@ -42,6 +44,8 @@ const DashboardStack = () => {
       <Stack.Screen name="MyOrders" component={MyOrders} />
       <Stack.Screen name="LocationMap" component={LocationMap} />
       <Stack.Screen name="ChatsDetails" component={ChatsDetails} />
+      <Stack.Screen name="Call" component={Call} />
+      <Stack.Screen name="CompleteOrder" component={CompleteOrder} />
     </Stack.Navigator>
   );
 };

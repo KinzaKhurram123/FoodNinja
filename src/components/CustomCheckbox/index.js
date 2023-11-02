@@ -1,45 +1,22 @@
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import CheckBox from 'react-native-check-box';
-import {Button, InputField, Text} from '../../components';
+import {COLORS, SIZES} from '../../constant';
+import {Icon, Text} from '../index';
+import {checked_icon, check_icon} from '../../assets/icons';
+import {styles} from './index.style';
 
-const CustomCheckBox = ({
-  style,
-  checkedColor,
-  roundStyle,
-  checkedBorderColor,
-  right_text_view,
-  textStyle,
-  right_text,
-  setIsChecked,
-  isChecked,
-}) => {
+const CustomCheckBox = ({title, isChecked, onPressChecked}) => {
   return (
-    <CheckBox
-      style={style}
-      rightTextView={
-        right_text_view ? (
-          right_text_view
-        ) : (
-          <Text style={[styles.text, textStyle]} text={right_text} />
-        )
-      }
-      uncheckedImage={
-        <View
-          style={[
-            styles.checkbox,
-            {backgroundColor: checkedColor, borderColor: checkedBorderColor},
-            roundStyle,
-          ]}>
-          <View></View>
-        </View>
-      }
-      onclick={setIsChecked}
-      isChecked={isChecked}
-    />
+    <TouchableOpacity
+      activeOpacity={0.5}
+      onPress={onPressChecked}
+      style={styles.main_view}>
+      <View style={isChecked ? styles.checked_view : styles.unchecked_veiw}>
+        {isChecked && <Icon name={check_icon} fill={'transparent'} />}
+      </View>
+      <Text text={title} style={styles.title} />
+    </TouchableOpacity>
   );
 };
 
 export default CustomCheckBox;
-
-const styles = StyleSheet.create({});

@@ -17,7 +17,9 @@ const ForgetPassword = ({navigation}) => {
   const [number, setNumber] = useState(null);
   return (
     <ImageContainer>
-      <ScrollView contentContainerStyle={{flex: 1}} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        contentContainerStyle={{flex: 1}}
+        showsVerticalScrollIndicator={false}>
         <View style={styles.main_view}>
           <View>
             <TouchableOpacity
@@ -39,6 +41,7 @@ const ForgetPassword = ({navigation}) => {
               mask={'[0000] [0000] [0000]'}
               placeholder={'0000 0000 0000'}
               onChangeText={val => setNumber(val)}
+              style={{width: '85%'}}
             />
             <IconInputField
               icon={mail_icon}

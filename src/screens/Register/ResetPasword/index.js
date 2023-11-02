@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
@@ -14,6 +14,7 @@ import IconInputField from '../../../components/InputField.js/index.js';
 import ImageContainer from '../../../components/ImageContainer';
 
 const RessetPaswrod = ({navigation}) => {
+  const [isPaswordHide, setIspaswordHide] = useState(false);
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
@@ -41,6 +42,7 @@ const RessetPaswrod = ({navigation}) => {
                 secureText={true}
                 rightIcon={true}
                 righticon={eye_icon}
+                // onPressRightIcon
               />
               <IconInputField
                 placeholder={'Confirm Password'}

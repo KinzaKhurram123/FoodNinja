@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     paddingVertical: SIZES.padding,
     alignItems: 'center',
     backgroundColor: COLORS.text_input,
-    width: '90%',
+    width: '100%',
     borderRadius: SIZES.padding2,
     marginTop: SIZES.padding,
   },

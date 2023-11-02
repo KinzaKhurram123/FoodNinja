@@ -4,15 +4,17 @@ import {styles} from './index.style';
 import {FONTS, images, SIZES} from '../../../constant';
 import {Button, Icon, InputField, Text} from '../../../components';
 import ImageContainer from '../../../components/ImageContainer';
-import { back_icon, location_icon } from '../../../assets/icons';
+import {back_icon, location_icon} from '../../../assets/icons';
 
 const Location = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
         <View style={styles.main_view}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Icon name={back_icon} />
+          <TouchableOpacity
+            onPress={() => navigation.goBack()}
+            style={{alignItems: 'flex-start'}}>
+            <Icon name={back_icon} style={{alignSelf: 'left'}} />
           </TouchableOpacity>
           <View>
             <Text text={'Set Your Location'} style={styles.heading_Text} />
@@ -28,7 +30,9 @@ const Location = ({navigation}) => {
               <Icon name={location_icon} />
               <Text text={'Your Location'} style={styles.text} />
             </View>
-            <TouchableOpacity style={styles.btn_location}>
+            <TouchableOpacity
+              style={styles.btn_location}
+              onPress={() => navigation.navigate('SelectLocation')}>
               <Text text={'Set Location'} style={{...FONTS.light13}} />
             </TouchableOpacity>
           </View>

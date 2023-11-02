@@ -18,7 +18,8 @@ import {
 } from '../../../assets/icons';
 
 const Signup = ({navigation}) => {
-  const [isCheck, setIsCheck] = useState(false);
+  const [isChecked, setisChecked] = useState(false);
+  const [isCheckedEmail, setisCheckedEmail] = useState(false);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -26,12 +27,12 @@ const Signup = ({navigation}) => {
         imageStyle={{height: '40%'}}
         style={{flex: 1}}
         source={images.background}>
-        <View style={styles.header_view}>
-          <Image source={images.logo} />
-          <Text text={'Food Ninja'} style={styles.heading_Text} />
-          <Text text={'Deliever Favorite Food'} style={styles.text} />
-        </View>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={styles.header_view}>
+            <Image source={images.logo} />
+            <Text text={'Food Ninja'} style={styles.heading_Text} />
+            <Text text={'Deliever Favorite Food'} style={styles.text} />
+          </View>
           <View style={styles.main_view}>
             <Text text={'SignUp For Free'} style={styles.signup_text} />
             <View style={{height: SIZES.padding}} />
@@ -43,6 +44,18 @@ const Signup = ({navigation}) => {
               placeholder={'Password'}
               rightIcon={eye_icon}
             />
+            <View style={{paddingRight: SIZES.padding * 4.5}}>
+              <CustomCheckBox
+                isChecked={isChecked}
+                onPressChecked={() => setisChecked(!isChecked)}
+                title="Keep Me Signed In"
+              />
+              <CustomCheckBox
+                isChecked={isCheckedEmail}
+                onPressChecked={() => setisCheckedEmail(!isChecked)}
+                title="Email Me About Special Pricing"
+              />
+            </View>
             <View style={{height: SIZES.padding}} />
             <Button
               buttonText={'Creat Account'}

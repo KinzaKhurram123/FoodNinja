@@ -13,8 +13,9 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
   },
   text: {
-    ...FONTS.Bold16,
+    ...FONTS.Regular14,
     marginVertical: SIZES.padding,
+    opacity: 0.6,
   },
   header_view: {
     justifyContent: 'center',
@@ -26,7 +27,7 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-start',
     paddingHorizontal: SIZES.padding,
     paddingTop: SIZES.padding * 2,
-    flex: 1, 
+    flex: 1,
   },
   btn_view: {
     justifyContent: 'flex-end',
