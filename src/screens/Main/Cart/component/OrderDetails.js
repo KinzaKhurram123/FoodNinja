@@ -19,7 +19,7 @@ const OrderDetails = ({onPress}) => {
         <Text style={styles.text}>Dicount</Text>
         <Text style={styles.text}>20 $</Text>
       </View>
-      <View style={styles.sub_view}>
+      <View style={[styles.sub_view, {marginTop: SIZES.padding}]}>
         <Text style={styles.total_text}>Total</Text>
         <Text style={styles.total_text}>150 $</Text>
       </View>
@@ -46,9 +46,11 @@ const styles = StyleSheet.create({
   },
   text: {
     ...FONTS.Medium15,
+    color: COLORS.white,
   },
   total_text: {
     ...FONTS.Bold21,
+    color: COLORS.white,
   },
   btn: {
     backgroundColor: COLORS.white,

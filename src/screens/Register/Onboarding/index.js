@@ -1,32 +1,32 @@
-import {Image, SafeAreaView, TouchableOpacity, View} from 'react-native';
+import {Image, SafeAreaView, View} from 'react-native';
 import React from 'react';
 import {styles} from './index.style';
-import {COLORS, images, SIZES} from '../../../constant';
-import {Button, Text} from '../../../components';
+import {Text} from '../../../components';
+import AppIntroSlider from 'react-native-app-intro-slider';
+import {slides} from '../../../config';
 
 const Onboarding = ({navigation}) => {
-  return (
-    <SafeAreaView style={styles.container}>
+  const renderItem = ({item}) => {
+    return (
       <View style={styles.main_view}>
-        <Image source={images.background_2} />
+        <Image source={item.image} />
         <View style={styles.sub_view}>
-          <Text
-            text={'Find your Comfort Food here'}
-            style={styles.heading_Text}
-          />
-          <Text
-            text={
-              'Here You Can find a chef or dish for every taste and color. Enjoy!'
-            }
-            style={styles.text}
-          />
-          <Button
-            buttonText={'Next'}
-            style={styles.btn}
-            onPress={() => navigation.navigate('Start')}
-          />
+          <Text text={item.title} style={styles.heading_Text} />
+          <Text text={item.text} style={styles.text} />
         </View>
       </View>
+    );
+  };
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <AppIntroSlider
+        renderItem={renderItem}
+        data={slides}
+        onDone={() => navigation.navigate('Login')}
+        activeDotStyle={styles.activedotStyle}
+        dotStyle={styles.dotStyle}
+      />
     </SafeAreaView>
   );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import Onboarding from '../screens/Register/Onboarding';
-import Start from '../screens/Register/Start';
 import Login from '../screens/Register/Login';
 import ForgetPasword from '../screens/Register/ForgetPassword';
 import Signup from '../screens/Register/Signup';
@@ -22,7 +21,6 @@ const AuthStack = () => {
       initialRouteName="Onboarding"
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="Onboarding" component={Onboarding} />
-      <Stack.Screen name="Start" component={Start} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="ForgetPasword" component={ForgetPasword} />
       <Stack.Screen name="Signup" component={Signup} />

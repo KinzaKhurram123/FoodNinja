@@ -14,6 +14,7 @@ import {
   email_icon,
   eye_icon,
   pasword_icon,
+  unactiveEye_icon,
   user_icon,
 } from '../../../assets/icons';
 
@@ -42,7 +43,7 @@ const Signup = ({navigation}) => {
               icon={pasword_icon}
               secureText={true}
               placeholder={'Password'}
-              rightIcon={eye_icon}
+              righticon={true}
             />
             <View style={{paddingRight: SIZES.padding * 4.5}}>
               <CustomCheckBox

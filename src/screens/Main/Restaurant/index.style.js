@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: COLORS.text_input,
     paddingVertical: SIZES.padding,
-    width: '45%',
+    width: '48%',
     marginRight: SIZES.padding2,
     marginTop: SIZES.padding,
     borderRadius: SIZES.padding2,

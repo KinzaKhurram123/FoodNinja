@@ -9,7 +9,7 @@ const Filter = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageContainer>
-        <ScrollView showsHorizontalScrollIndicator={false }>
+        <ScrollView showsHorizontalScrollIndicator={false}>
           <Headers
             heading_Text={'Find Your Favorite Food'}
             searchbar={true}
@@ -19,42 +19,42 @@ const Filter = () => {
             <Text text={'Type'} style={styles.text} />
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'Restaurant'} />
+                <Text text={'Restaurant'} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'Menu'} />
+                <Text text={'Menu'} style={styles.filter_text} />
               </TouchableOpacity>
             </View>
             <Text text={'Location'} style={styles.text} />
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'1 km'} />
+                <Text text={'1 km'} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'2 Km '} />
+                <Text text={'2 Km '} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'10 Km '} />
+                <Text text={'10 Km '} style={styles.filter_text} />
               </TouchableOpacity>
             </View>
             <Text text={'Food'} style={styles.text} />
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'1 km'} />
+                <Text text={'1 km'} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'2 Km '} />
+                <Text text={'2 Km '} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'10 Km '} />
+                <Text text={'10 Km '} style={styles.filter_text} />
               </TouchableOpacity>
             </View>
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'10 Km '} />
+                <Text text={'10 Km '} style={styles.filter_text} />
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn_view}>
-                <Text text={'10 Km '} />
+                <Text text={'10 Km '} style={styles.filter_text} />
               </TouchableOpacity>
             </View>
           </View>

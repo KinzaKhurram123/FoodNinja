@@ -7,4 +7,4 @@ export default `<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmln
 </linearGradient>
 </defs>
 </svg>
-`
+`;

@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
     ...FONTS.Bold16,
     textAlign: 'left',
     marginTop: SIZES.padding2,
+    color: COLORS.white,
   },
   light_text: {
     textAlign: 'center',
@@ -38,5 +39,9 @@ export const styles = StyleSheet.create({
   restaurant_heading: {
     ...FONTS.Bold16,
     textAlign: 'center',
+  },
+  filter_text: {
+    color: COLORS.white,
+    opacity: 0.4,
   },
 });

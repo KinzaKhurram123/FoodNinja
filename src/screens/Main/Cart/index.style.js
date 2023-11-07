@@ -45,11 +45,13 @@ export const styles = StyleSheet.create({
     paddingVertical: 2,
     paddingHorizontal: SIZES.padding2,
     borderRadius: 8,
+    marginLeft: 7,
   },
   plus_btn_light: {
     backgroundColor: COLORS.primary,
     paddingVertical: 2,
     paddingHorizontal: SIZES.padding2,
+    marginRight: 7,
     borderRadius: 8,
     opacity: 0.6,
   },

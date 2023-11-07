@@ -35,7 +35,7 @@ const Cart = ({navigation}) => {
                 return (
                   <View style={styles.popular_menu_view}>
                     <Image source={item.image} />
-                    <View style={{paddingRight: SIZES.padding}}>
+                    <View style={{paddingHorizontal: SIZES.padding2}}>
                       <Text text={item.name} style={styles.menu_heading} />
                       <Text
                         text={item.restaurant_name}

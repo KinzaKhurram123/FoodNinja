@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     ...FONTS.SplashText,
   },
   text: {
-    ...FONTS.Bold12,
+    ...FONTS.Bold14,
   },
   header_view: {
     justifyContent: 'center',
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   login_text: {
-    ...FONTS.Regular19,
+    ...FONTS.Bold20,
     color: COLORS.white,
     marginTop: SIZES.padding2,
   },
@@ -46,12 +46,12 @@ export const styles = StyleSheet.create({
   },
   btn_text: {
     ...FONTS.Regular14,
-    color: COLORS.input_text,
+    color: COLORS.white,
     opacity: 0.4,
+    marginLeft: SIZES.padding2,
   },
   btn_innerView: {
     flexDirection: 'row',
-    gap: SIZES.padding2,
   },
   forget_text: {
     ...FONTS.Regular12,

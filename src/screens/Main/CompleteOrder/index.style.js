@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   heading_Text: {
     color: COLORS.input_text,
-    ...FONTS.Bold21,
+    ...FONTS.SemiBold19,
     marginTop: SIZES.padding * 3,
     paddingHorizontal: SIZES.padding2,
   },
@@ -42,4 +42,10 @@ export const styles = StyleSheet.create({
   btn_text: {
     color: COLORS.primary,
   },
+  text_view: {
+    alignItems: 'center',
+    bottom: SIZES.padding * 2.5,
+    justifyContent: 'center',
+  },
+  image: {marginTop: SIZES.padding * 2},
 });

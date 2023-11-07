@@ -26,9 +26,9 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   signup_text: {
-    ...FONTS.Regular19,
+    ...FONTS.Bold20,
     color: COLORS.white,
-    marginTop: SIZES.padding,
+    marginTop: SIZES.padding * 2,
   },
   btn_text: {
     ...FONTS.Regular14,

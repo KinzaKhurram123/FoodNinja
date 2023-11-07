@@ -47,6 +47,6 @@ export const styles = StyleSheet.create({
     paddingRight: SIZES.padding * 2,
   },
   text_Input: {
-    backgroundColor: COLORS.black,
+    flex: 1,
   },
 });

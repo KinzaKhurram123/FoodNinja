@@ -1,4 +1,10 @@
-import {SafeAreaView, Image, View, ImageBackground} from 'react-native';
+import {
+  SafeAreaView,
+  Image,
+  View,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {styles} from './index.style';
 import {images, SIZES} from '../../../constant';
@@ -13,10 +19,7 @@ const Call = () => {
         imageStyle={{height: '40%'}}
         style={{flex: 1}}>
         <View style={styles.main_view}>
-          <Image
-            source={images.person_4}
-            style={{marginTop: SIZES.padding}}
-          />
+          <Image source={images.person_4} style={{marginTop: SIZES.padding}} />
           <View
             style={{
               justifyContent: 'center',
@@ -27,8 +30,12 @@ const Call = () => {
             <Text text={'Ringing . . .'} style={styles.light_text} />
           </View>
           <View style={styles.btn_view}>
-            <Icon name={decline_call} />
-            <Icon name={volume_icon} />
+            <TouchableOpacity >
+              <Icon name={volume_icon} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Icon name={decline_call} />
+            </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>

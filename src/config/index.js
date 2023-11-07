@@ -233,3 +233,18 @@ export const my_order_list = [
     status: 'Reorder',
   },
 ];
+
+export const slides = [
+  {
+    key: 1,
+    title: `Find your Comfort Food here`,
+    text: 'Here You Can find a chef or dish for every taste and color. Enjoy!',
+    image: images.background_2,
+  },
+  {
+    key: 2,
+    title: `Food Ninja is Where Your Comfort Food Lives`,
+    text: 'Enjoy a fast and smooth food delivery at your doorstep',
+    image: images.background_3,
+  },
+];

@@ -11,7 +11,13 @@ import {COLORS, FONTS, images, SIZES} from '../../../constant';
 import {styles} from './index.style';
 import {Button, InputField, Text} from '../../../components';
 import IconComponent from '../../../components/Icon';
-import {facebook_icon, google_icon} from '../../../assets/icons';
+import {
+  eye_icon,
+  facebook_icon,
+  google_icon,
+  pasword_icon,
+  unactiveEye_icon,
+} from '../../../assets/icons';
 
 const Login = ({navigation}) => {
   return (
@@ -30,7 +36,11 @@ const Login = ({navigation}) => {
             <Text text={'Login To Your Account'} style={styles.login_text} />
             <View style={{height: SIZES.padding}} />
             <InputField placeholder={'Email'} />
-            <InputField placeholder={'Password'} />
+            <InputField
+              placeholder={'Password'}
+              righticon={true}
+              secureText={true}
+            />
             <View style={{height: SIZES.padding}} />
             <Text text={'Or Continue With'} style={styles.text} />
             <View style={styles.btn_row}>

@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
+import {active_eye_icon, unactiveEye_icon} from '../../assets/icons';
 import {COLORS, FONTS, SIZES} from '../../constant';
 import IconComponent from '../Icon';
-import {Icons} from '../index';
-import {Text} from '../index';
 
 const InputField = ({
   style,
@@ -25,11 +24,9 @@ const InputField = ({
   returnKeyType,
   onChangeText,
   autoFocus,
-  righticon,
-  onPressRightIcon,
+  righticon = false,
 }) => {
-  const [hidePassword, setHidePassword] = useState(true);
-
+  const [hidePassword, setHidePassword] = useState(false);
   const onHidePress = () => {
     setHidePassword(!hidePassword);
   };
@@ -65,8 +62,11 @@ const InputField = ({
           onSubmitEditing={onSubmitEditing}
         />
         {righticon && (
-          <TouchableOpacity onPress={onPressRightIcon}>
-            <IconComponent name={righticon} style={[styles.icon, iconStyle]} />
+          <TouchableOpacity onPress={onHidePress}>
+            <IconComponent
+              name={hidePassword ? active_eye_icon : unactiveEye_icon}
+              style={[styles.icon, iconStyle]}
+            />
           </TouchableOpacity>
         )}
       </View>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: SIZES.padding2,
+    paddingLeft: SIZES.padding,
     borderRadius: SIZES.padding2,
     backgroundColor: COLORS.text_input,
     marginTop: SIZES.padding2,
@@ -98,6 +98,7 @@ const styles = StyleSheet.create({
     height: 55,
     textAlignVertical: 'center',
     opacity: 0.3,
+    paddingLeft: SIZES.padding2,
   },
   errorText: {
     ...FONTS.Regular10,

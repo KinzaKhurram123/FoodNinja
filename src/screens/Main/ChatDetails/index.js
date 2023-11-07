@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React, {useEffect, useState, useCallback} from 'react';
 import {Icon, Text} from '../../../components';
-import {images} from '../../../constant';
+import {COLORS, images} from '../../../constant';
 import {styles} from './index.style';
 import BackButton from '../../../components/backButton';
 import {call_icon} from '../../../assets/icons';
@@ -46,6 +46,18 @@ const ChatsDetails = ({navigation}) => {
     );
   }, []);
 
+  // const renderBubble = () => {
+  //   return (
+  //     <View
+  //       style={{
+  //         backgroundColor: COLORS.primary,
+  //         width: '20%',
+  //         height: '40%',
+  //       }}>
+  //       </View>
+  //   );
+  // };
+
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -63,15 +75,17 @@ const ChatsDetails = ({navigation}) => {
             <Icon name={call_icon} style={styles.call_icon} />
           </TouchableOpacity>
         </View>
-        <GiftedChat
-          messages={messages}
-          onSend={messages => onSend(messages)}
-          user={{
-            _id: 1,
-          }}
-          textInputStyle={styles.text_Input}
-          isTyping={true}
-        />
+        <View style={styles.text_Input}>
+          <GiftedChat
+            messages={messages}
+            onSend={messages => onSend(messages)}
+            user={{
+              _id: 1,
+            }}
+            // renderBubble={renderBubble}
+            isTyping={true}
+          />
+        </View>
       </ImageBackground>
     </SafeAreaView>
   );

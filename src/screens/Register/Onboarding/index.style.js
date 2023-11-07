@@ -33,4 +33,15 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: SIZES.padding,
   },
+  dotStyle: {
+    borderColor: COLORS.primary,
+    borderWidth: 1,
+    bottom: '20%',
+    marginTop: SIZES.padding * 2,
+  },
+  activedotStyle: {
+    marginTop: SIZES.padding * 2,
+    backgroundColor: COLORS.primary,
+    bottom: '20%',
+  },
 });
