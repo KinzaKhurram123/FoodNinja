@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   text: {
     ...FONTS.Bold16,
     marginVertical: SIZES.padding,
+    color:COLORS.text_color
   },
   main_view: {
     justifyContent: 'space-between',

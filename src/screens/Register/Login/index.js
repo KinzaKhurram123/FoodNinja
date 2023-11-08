@@ -60,10 +60,7 @@ const Login = ({navigation}) => {
             <View style={{height: SIZES.padding}} />
             <TouchableOpacity
               onPress={() => navigation.navigate('ForgetPasword')}>
-              <Text
-                text={'Forget Your Password ?'}
-                style={styles.forget_text}
-              />
+              <Text text={'Forget Your Password?'} style={styles.forget_text} />
             </TouchableOpacity>
             <Button
               buttonText={'Login'}

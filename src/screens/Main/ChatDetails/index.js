@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 import React, {useEffect, useState, useCallback} from 'react';
 import {Icon, Text} from '../../../components';
-import {COLORS, images} from '../../../constant';
+import {COLORS, images, SIZES} from '../../../constant';
 import {styles} from './index.style';
 import BackButton from '../../../components/backButton';
-import {call_icon} from '../../../assets/icons';
-import {GiftedChat} from 'react-native-gifted-chat';
+import {call_icon, send_icon} from '../../../assets/icons';
+import {Bubble, GiftedChat, InputToolbar, Send} from 'react-native-gifted-chat';
 
 const ChatsDetails = ({navigation}) => {
   const [messages, setMessages] = useState([]);
@@ -45,19 +45,6 @@ const ChatsDetails = ({navigation}) => {
       GiftedChat.append(previousMessages, messages),
     );
   }, []);
-
-  // const renderBubble = () => {
-  //   return (
-  //     <View
-  //       style={{
-  //         backgroundColor: COLORS.primary,
-  //         width: '20%',
-  //         height: '40%',
-  //       }}>
-  //       </View>
-  //   );
-  // };
-
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -82,7 +69,45 @@ const ChatsDetails = ({navigation}) => {
             user={{
               _id: 1,
             }}
-            // renderBubble={renderBubble}
+            placeholder={'New Message'}
+            renderInputToolbar={prpos => {
+              return (
+                <InputToolbar
+                  {...prpos}
+                  containerStyle={styles.text_Input_container}
+                />
+              );
+            }}
+            renderSend={props => {
+              return (
+                <Send {...props}>
+                  <Icon name={send_icon} />
+                </Send>
+              );
+            }}
+            renderBubble={prpos => (
+              <Bubble
+                {...prpos}
+                wrapperStyle={{
+                  right: {
+                    backgroundColor: COLORS.primary,
+                    borderBottomRightRadius: 0,
+                    borderBottomLeftRadius: 15,
+                    borderTopRightRadius: 15,
+                    borderTopLeftRadius: 15,
+                    marginBottom: SIZES.padding2 * 0.7,
+                  },
+                  left: {
+                    backgroundColor: COLORS.text_input,
+                    borderBottomRightRadius: 15,
+                    borderBottomLeftRadius: 15,
+                    borderTopRightRadius: 15,
+                    borderTopLeftRadius: 0,
+                    marginBottom: SIZES.padding2 * 0.8,
+                  },
+                }}
+              />
+            )}
             isTyping={true}
           />
         </View>

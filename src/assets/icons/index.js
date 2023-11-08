@@ -37,3 +37,4 @@ export {default as decline_call} from './decline-call-icon';
 export {default as stars_call} from './star-icon';
 export {default as check_icon} from './check-icon';
 export {default as active_eye_icon} from './active_eye_icon';
+export {default as send_icon} from './send_icon';

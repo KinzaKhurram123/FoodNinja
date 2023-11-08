@@ -12,7 +12,7 @@ export const COLORS = {
   background: '#0D0D0D',
   primary: '#53E88B',
   secondary: '#09051C',
-  text_color: '#fff',
+  text_color: '#FEFEFF',
   white: '#fff',
   dark_blue: '#09051C',
   text_input: '#474747',

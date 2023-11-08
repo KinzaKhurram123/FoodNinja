@@ -49,4 +49,15 @@ export const styles = StyleSheet.create({
   text_Input: {
     flex: 1,
   },
+  text_Input_container: {
+    backgroundColor: COLORS.text_input,
+    alignContent: 'center',
+    justifyContent: 'center',
+    borderWidth: 0,
+    marginVertical: SIZES.padding2 * 0.2,
+    marginHorizontal: 6,
+    padding: SIZES.padding2 * 0.5,
+    borderRadius: SIZES.padding2,
+    borderTopColor: 'transparent',
+  },
 });
