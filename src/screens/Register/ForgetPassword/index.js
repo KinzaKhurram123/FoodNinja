@@ -1,17 +1,11 @@
-import {
-  StyleSheet,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-  View,
-} from 'react-native';
 import React, {useState} from 'react';
-import {styles} from './index.style';
-import {COLORS, SIZES} from '../../../constant';
-import {Button, Icon, MaskInput, Text} from '../../../components';
-import IconInputField from '../../../components/InputField.js/index.js';
-import ImageContainer from '../../../components/ImageContainer';
+import {ScrollView, TouchableOpacity, View} from 'react-native';
 import {back_icon, mail_icon, message_icon} from '../../../assets/icons';
+import {Button, Icon, MaskInput, Text} from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import IconInputField from '../../../components/InputField.js/index.js';
+import {SIZES} from '../../../constant';
+import {styles} from './index.style';
 
 const ForgetPassword = ({navigation}) => {
   const [number, setNumber] = useState(null);

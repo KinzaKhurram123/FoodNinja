@@ -1,21 +1,14 @@
-import {
-  StyleSheet,
-  Image,
-  View,
-  SafeAreaView,
-  TouchableOpacity,
-  FlatList,
-  ScrollView,
-  ImageBackground,
-} from 'react-native';
 import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
-import {styles} from './index.style';
+import {
+  FlatList, Image, ImageBackground, ScrollView, TouchableOpacity, View
+} from 'react-native';
+import { Text } from '../../../components';
 import Headers from '../../../components/Header';
-import {SIZES} from '../../../constant/themes';
-import {Text} from '../../../components';
-import {nearest_restaurant, popular_menu} from '../../../config';
-import {images} from '../../../constant';
+import ImageContainer from '../../../components/ImageContainer';
+import { nearest_restaurant, popular_menu } from '../../../config';
+import { images } from '../../../constant';
+import { SIZES } from '../../../constant/themes';
+import { styles } from './index.style';
 
 const Home = ({navigation}) => {
   return (

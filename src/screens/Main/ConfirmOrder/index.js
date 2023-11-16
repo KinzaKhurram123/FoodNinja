@@ -1,14 +1,13 @@
-import {TouchableOpacity, SafeAreaView, View} from 'react-native';
 import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
-import {styles} from './index.style';
-import BackButton from '../../../components/backButton';
+import { SafeAreaView, TouchableOpacity, View } from 'react-native';
+import { paypal_icon } from '../../../assets/icons';
 import locationIcon from '../../../assets/icons/location-icon';
-import {Icon, Text} from '../../../components';
-import {COLORS, SIZES} from '../../../constant';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {paypal_icon} from '../../../assets/icons';
-import {OrderDetails} from './component';
+import { Icon, Text } from '../../../components';
+import BackButton from '../../../components/backButton';
+import ImageContainer from '../../../components/ImageContainer';
+import { COLORS } from '../../../constant';
+import { OrderDetails } from './component';
+import { styles } from './index.style';
 const ConfirmOrder = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>

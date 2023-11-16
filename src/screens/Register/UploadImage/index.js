@@ -1,11 +1,11 @@
-import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import ImageContainer from '../../../components/ImageContainer';
-import {back_icon, camra_icon, gallary_icon} from '../../../assets/icons';
+import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import ImageCropPicker from 'react-native-image-crop-picker';
+import {back_icon, camra_icon, gallary_icon} from '../../../assets/icons';
+import {Button, Icon, Text} from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import {SIZES} from '../../../constant';
+import {styles} from './index.style';
 
 const UploadImage = ({navigation}) => {
   const SelectFormGalary = () => {

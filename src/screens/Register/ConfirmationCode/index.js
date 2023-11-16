@@ -1,16 +1,14 @@
-import {SafeAreaView, TouchableOpacity, View} from 'react-native';
-import React, {useState} from 'react';
-import {styles} from './index.style';
-import {COLORS, SIZES} from '../../../constant';
-import {Button, Icon, Text} from '../../../components';
-import ImageContainer from '../../../components/ImageContainer';
-import {back_icon} from '../../../assets/icons';
+import React, { useState } from 'react';
+import { SafeAreaView, TouchableOpacity, View } from 'react-native';
 import {
   CodeField,
-  Cursor,
-  useClearByFocusCell,
-  useBlurOnFulfill,
+  Cursor, useBlurOnFulfill, useClearByFocusCell
 } from 'react-native-confirmation-code-field';
+import { back_icon } from '../../../assets/icons';
+import { Button, Icon, Text } from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import { COLORS, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const ConfirmationCode = ({navigation}) => {
   const CELL_COUNT = 4;

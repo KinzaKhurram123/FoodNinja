@@ -1,22 +1,18 @@
-import {
-  Image,
-  ScrollView,
-  SafeAreaView,
-  TouchableOpacity,
-  View,
-  FlatList,
-} from 'react-native';
 import React from 'react';
-import {Button, Icon, Text} from '../../../components';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
+import {
+  FlatList, Image, SafeAreaView, ScrollView, TouchableOpacity,
+  View
+} from 'react-native';
 import {
   bag_icon,
   green_location_icon,
   love_icon,
-  rating_icon,
+  rating_icon
 } from '../../../assets/icons';
-import {testimonials} from '../../../config';
+import { Button, Icon, Text } from '../../../components';
+import { testimonials } from '../../../config';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const MenuDetails = ({navigation}) => {
   return (

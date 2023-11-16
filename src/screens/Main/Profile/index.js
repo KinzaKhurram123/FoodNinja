@@ -1,17 +1,14 @@
-import {
-  Image,
-  SafeAreaView,
-  FlatList,
-  TouchableOpacity,
-  View,
-  ScrollView,
-} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images} from '../../../constant';
-import {Icon, Text} from '../../../components';
-import {edit_icon, voucher_icon} from '../../../assets/icons';
-import {cart_items} from '../../../config';
+import {
+  FlatList, Image,
+  SafeAreaView, ScrollView, TouchableOpacity,
+  View
+} from 'react-native';
+import { edit_icon, voucher_icon } from '../../../assets/icons';
+import { Icon, Text } from '../../../components';
+import { cart_items } from '../../../config';
+import { images } from '../../../constant';
+import { styles } from './index.style';
 
 const Profile = ({navigation}) => {
   return (

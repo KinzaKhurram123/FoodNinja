@@ -1,14 +1,11 @@
-import {
-  StyleSheet,
-  ImageBackground,
-  View,
-  TouchableOpacity,
-} from 'react-native';
 import React from 'react';
-import {COLORS, images, SIZES} from '../../../constant';
-import {Icon, InputField, Text} from '../../../components';
-import {styles} from './index.style';
-import {location_icon, serachbar_icon} from '../../../assets/icons';
+import {
+  ImageBackground, TouchableOpacity, View
+} from 'react-native';
+import { location_icon, serachbar_icon } from '../../../assets/icons';
+import { Icon, InputField, Text } from '../../../components';
+import { images } from '../../../constant';
+import { styles } from './index.style';
 
 const LocationMap = () => {
   return (

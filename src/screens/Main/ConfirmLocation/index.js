@@ -1,11 +1,11 @@
-import {TouchableOpacity, StyleSheet, View} from 'react-native';
 import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
+import { TouchableOpacity, View } from 'react-native';
+import { location_icon } from '../../../assets/icons';
+import { Icon, Text } from '../../../components';
 import BackButton from '../../../components/backButton';
-import {Icon, Text} from '../../../components';
-import {COLORS, SIZES} from '../../../constant';
-import {styles} from './index.style';
-import {location_icon} from '../../../assets/icons';
+import ImageContainer from '../../../components/ImageContainer';
+import { COLORS, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const ConfirmLocation = ({navigation}) => {
   return (

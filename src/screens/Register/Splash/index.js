@@ -1,14 +1,12 @@
+import React from 'react';
 import {
   Image,
   ImageBackground,
-  SafeAreaView,
-  StyleSheet,
-  View,
+  SafeAreaView, View
 } from 'react-native';
-import React from 'react';
-import {styles} from './index.style';
+import { Text } from '../../../components';
 import images from '../../../constant/images';
-import {Text} from '../../../components';
+import { styles } from './index.style';
 
 const Splash = ({navigation}) => {
   setTimeout(() => {

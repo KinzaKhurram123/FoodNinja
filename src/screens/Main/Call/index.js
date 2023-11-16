@@ -1,15 +1,11 @@
-import {
-  SafeAreaView,
-  Image,
-  View,
-  ImageBackground,
-  TouchableOpacity,
-} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Icon, Text} from '../../../components';
-import {cencle_icon, decline_call, volume_icon} from '../../../assets/icons';
+import {
+  Image, ImageBackground, SafeAreaView, TouchableOpacity, View
+} from 'react-native';
+import { decline_call, volume_icon } from '../../../assets/icons';
+import { Icon, Text } from '../../../components';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const Call = () => {
   return (

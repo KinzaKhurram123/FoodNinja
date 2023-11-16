@@ -1,18 +1,17 @@
+import React, {useCallback, useEffect, useState} from 'react';
 import {
-  StyleSheet,
-  SafeAreaView,
-  View,
-  ImageBackground,
-  TouchableOpacity,
   Image,
+  ImageBackground,
+  SafeAreaView,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import React, {useEffect, useState, useCallback} from 'react';
+import {Bubble, GiftedChat, InputToolbar, Send} from 'react-native-gifted-chat';
+import {call_icon, send_icon} from '../../../assets/icons';
 import {Icon, Text} from '../../../components';
+import BackButton from '../../../components/backButton';
 import {COLORS, images, SIZES} from '../../../constant';
 import {styles} from './index.style';
-import BackButton from '../../../components/backButton';
-import {call_icon, send_icon} from '../../../assets/icons';
-import {Bubble, GiftedChat, InputToolbar, Send} from 'react-native-gifted-chat';
 
 const ChatsDetails = ({navigation}) => {
   const [messages, setMessages] = useState([]);

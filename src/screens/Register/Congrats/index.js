@@ -1,8 +1,8 @@
-import {Image, ImageBackground, SafeAreaView, View} from 'react-native';
 import React from 'react';
-import {images} from '../../../constant';
-import {styles} from './index.style';
-import {Button, Text} from '../../../components';
+import { Image, ImageBackground, SafeAreaView, View } from 'react-native';
+import { Button, Text } from '../../../components';
+import { images } from '../../../constant';
+import { styles } from './index.style';
 
 const Congrats = ({navigation, route}) => {
   const text = route.params;

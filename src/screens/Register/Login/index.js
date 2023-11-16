@@ -1,23 +1,17 @@
+import React from 'react';
 import {
   Image,
   ImageBackground,
   SafeAreaView,
-  View,
-  TouchableOpacity,
   ScrollView,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import React from 'react';
-import {COLORS, FONTS, images, SIZES} from '../../../constant';
-import {styles} from './index.style';
+import {facebook_icon, google_icon} from '../../../assets/icons';
 import {Button, InputField, Text} from '../../../components';
 import IconComponent from '../../../components/Icon';
-import {
-  eye_icon,
-  facebook_icon,
-  google_icon,
-  pasword_icon,
-  unactiveEye_icon,
-} from '../../../assets/icons';
+import {images, SIZES} from '../../../constant';
+import {styles} from './index.style';
 
 const Login = ({navigation}) => {
   return (

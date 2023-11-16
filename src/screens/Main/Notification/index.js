@@ -1,11 +1,11 @@
-import {FlatList, SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
+import { FlatList, SafeAreaView, TouchableOpacity, View } from 'react-native';
+import { Icon, Text } from '../../../components';
 import BackButton from '../../../components/backButton';
-import {styles} from './index.style';
-import {notifications} from '../../../config';
-import {Icon, Text} from '../../../components';
-import {SIZES} from '../../../constant';
+import ImageContainer from '../../../components/ImageContainer';
+import { notifications } from '../../../config';
+import { SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const Notification = ({navigation}) => {
   return (

@@ -1,10 +1,10 @@
-import {TouchableOpacity, SafeAreaView, View} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {FONTS, images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import ImageContainer from '../../../components/ImageContainer';
+import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import {back_icon, location_icon} from '../../../assets/icons';
+import {Button, Icon, Text} from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import {FONTS, SIZES} from '../../../constant';
+import {styles} from './index.style';
 
 const Location = ({navigation}) => {
   return (

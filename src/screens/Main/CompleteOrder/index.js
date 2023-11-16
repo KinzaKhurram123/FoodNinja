@@ -1,16 +1,12 @@
-import {
-  ImageBackground,
-  Image,
-  SafeAreaView,
-  TouchableOpacity,
-  View,
-  ScrollView,
-} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import {edit_icon, star_icon} from '../../../assets/icons';
+import {
+  Image, ImageBackground, SafeAreaView, ScrollView, TouchableOpacity,
+  View
+} from 'react-native';
+import { edit_icon, star_icon } from '../../../assets/icons';
+import { Button, Icon, InputField, Text } from '../../../components';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const CompleteOrder = () => {
   return (

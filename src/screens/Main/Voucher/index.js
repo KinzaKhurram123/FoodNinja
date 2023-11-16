@@ -1,10 +1,10 @@
-import {View, ImageBackground, TouchableOpacity} from 'react-native';
 import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
+import { ImageBackground, TouchableOpacity, View } from 'react-native';
+import { Text } from '../../../components';
 import BackButton from '../../../components/backButton';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Text} from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const Voucher = ({navigation}) => {
   return (

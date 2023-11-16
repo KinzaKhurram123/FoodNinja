@@ -1,9 +1,9 @@
-import {Image, SafeAreaView, View} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {Text} from '../../../components';
+import { Image, SafeAreaView, View } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import {slides} from '../../../config';
+import { Text } from '../../../components';
+import { slides } from '../../../config';
+import { styles } from './index.style';
 
 const Onboarding = ({navigation}) => {
   const renderItem = ({item}) => {

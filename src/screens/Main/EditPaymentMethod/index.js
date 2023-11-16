@@ -1,12 +1,10 @@
-import {SafeAreaView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import back_icon from '../../../assets/icons';
-import {paypal_icon, visa_icon, payoneer_icon} from '../../../assets/icons';
-import ImageContainer from '../../../components/ImageContainer';
+import { SafeAreaView, TouchableOpacity, View } from 'react-native';
+import { payoneer_icon, paypal_icon, visa_icon } from '../../../assets/icons';
+import { Icon, Text } from '../../../components';
 import BackButton from '../../../components/backButton';
+import ImageContainer from '../../../components/ImageContainer';
+import { styles } from './index.style';
 const EditPaymentMethod = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>

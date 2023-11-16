@@ -1,11 +1,11 @@
-import {SafeAreaView, ScrollView, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {images, SIZES} from '../../../constant';
-import {Button, Icon, InputField, Text} from '../../../components';
-import {back_icon, eye_icon} from '../../../assets/icons';
-import IconInputField from '../../../components/InputField.js/index.js';
+import { ScrollView, TouchableOpacity, View } from 'react-native';
+import { back_icon } from '../../../assets/icons';
+import { Button, Icon, Text } from '../../../components';
 import ImageContainer from '../../../components/ImageContainer';
+import IconInputField from '../../../components/InputField.js/index.js';
+import { SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const CreatAccount = ({navigation}) => {
   return (

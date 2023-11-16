@@ -1,23 +1,17 @@
-import {
-  SafeAreaView,
-  TouchableOpacity,
-  ScrollView,
-  Image,
-  View,
-  FlatList,
-} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import {COLORS, images, SIZES} from '../../../constant';
-import {Icon, Text} from '../../../components';
+import {
+  FlatList, Image, SafeAreaView, ScrollView, TouchableOpacity, View
+} from 'react-native';
 import {
   green_location_icon,
   location_icon_green,
   love_icon,
-  rating_icon,
-  star_icon,
+  rating_icon
 } from '../../../assets/icons';
-import {restaurant_items, testimonials} from '../../../config';
+import { Icon, Text } from '../../../components';
+import { restaurant_items, testimonials } from '../../../config';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const OrderDetail = () => {
   return (

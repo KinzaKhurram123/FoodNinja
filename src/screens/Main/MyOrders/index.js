@@ -1,17 +1,14 @@
+import React from 'react';
 import {
   FlatList,
-  Image,
-  TouchableOpacity,
-  SafeAreaView,
-  View,
+  Image, SafeAreaView, TouchableOpacity, View
 } from 'react-native';
-import React from 'react';
-import ImageContainer from '../../../components/ImageContainer';
-import {styles} from './index.style';
+import { Text } from '../../../components';
 import Headers from '../../../components/Header';
-import {Text} from '../../../components';
-import {my_order_list, popular_menu} from '../../../config';
-import {SIZES} from '../../../constant';
+import ImageContainer from '../../../components/ImageContainer';
+import { my_order_list } from '../../../config';
+import { SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const MyOrders = ({navigation}) => {
   return (

@@ -1,10 +1,9 @@
-import {SafeAreaView, ImageBackground, View} from 'react-native';
-import React, {useRef} from 'react';
-import {styles} from './index.style';
-import {InputField} from '../../../components';
-import {serachbar_icon} from '../../../assets/icons';
-import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
-import {images} from '../../../constant';
+import React, { useRef } from 'react';
+import { ImageBackground, SafeAreaView } from 'react-native';
+import { serachbar_icon } from '../../../assets/icons';
+import { InputField } from '../../../components';
+import { images } from '../../../constant';
+import { styles } from './index.style';
 
 const SelectLocation = ({navigation}) => {
   const map = useRef();

@@ -1,9 +1,9 @@
-import {TouchableOpacity, SafeAreaView, View, ScrollView} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import ImageContainer from '../../../components/ImageContainer';
+import { SafeAreaView, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Text } from '../../../components';
 import Headers from '../../../components/Header';
-import {Text} from '../../../components';
+import ImageContainer from '../../../components/ImageContainer';
+import { styles } from './index.style';
 
 const Filter = () => {
   return (

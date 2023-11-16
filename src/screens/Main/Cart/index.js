@@ -22,11 +22,11 @@ const Cart = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <ImageContainer>
         <ScrollView>
+          <BackButton
+            text={'Order Details'}
+            onpress={() => navigation.goBack()}
+          />
           <View style={styles.main_view}>
-            <BackButton
-              text={'Order Details'}
-              onpress={() => navigation.goBack()}
-            />
             <FlatList
               data={cart_items}
               keyExtractor={item => item.id}
@@ -44,13 +44,17 @@ const Cart = ({navigation}) => {
                       <Text text={item.price} style={styles.menu_price} />
                     </View>
                     <TouchableOpacity
-                      onpress={() => setAmount(amount - 1)}
+                      onpress={() => {
+                        setAmount(amount - 1);
+                      }}
                       style={styles.plus_btn_light}>
                       <Text text={'-'} />
                     </TouchableOpacity>
                     <Text text={amount} />
                     <TouchableOpacity
-                      onpress={() => setAmount(amount + 1)}
+                      onpress={() => {
+                        setAmount(amount + 1);
+                      }}
                       style={styles.plus_btn}>
                       <Text text={'+'} />
                     </TouchableOpacity>

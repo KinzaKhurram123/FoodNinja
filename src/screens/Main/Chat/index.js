@@ -1,17 +1,13 @@
-import {
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-  FlatList,
-  View,
-} from 'react-native';
 import React from 'react';
-import {styles} from './index.style';
-import ImageContainer from '../../../components/ImageContainer';
+import {
+  FlatList, Image, SafeAreaView, TouchableOpacity, View
+} from 'react-native';
+import { Text } from '../../../components';
 import BackButton from '../../../components/backButton';
-import {chat} from '../../../config';
-import {Text} from '../../../components';
-import {SIZES} from '../../../constant';
+import ImageContainer from '../../../components/ImageContainer';
+import { chat } from '../../../config';
+import { SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const Chats = ({navigation}) => {
   return (

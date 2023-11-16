@@ -1,22 +1,15 @@
+import React, { useState } from 'react';
 import {
   Image,
   ImageBackground,
-  SafeAreaView,
-  View,
-  TouchableOpacity,
-  ScrollView,
+  SafeAreaView, ScrollView, TouchableOpacity, View
 } from 'react-native';
-import React, {useState} from 'react';
-import {COLORS, images, SIZES} from '../../../constant';
-import {styles} from './index.style';
-import {Button, CustomCheckBox, InputField, Text} from '../../../components';
 import {
-  email_icon,
-  eye_icon,
-  pasword_icon,
-  unactiveEye_icon,
-  user_icon,
+  email_icon, pasword_icon, user_icon
 } from '../../../assets/icons';
+import { Button, CustomCheckBox, InputField, Text } from '../../../components';
+import { images, SIZES } from '../../../constant';
+import { styles } from './index.style';
 
 const Signup = ({navigation}) => {
   const [isChecked, setisChecked] = useState(false);
